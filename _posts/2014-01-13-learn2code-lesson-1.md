@@ -3,7 +3,7 @@ title: "Learn to Code: Lesson 1"
 author: dirk
 layout: post
 permalink: /2014/01/13/learn2code-lesson-1/
-banner: /img/2014/01/dbn-skyline.png
+header_image: /img/2014/01/dbn-skyline.png
 categories:
  - tutorial
 tags:
@@ -39,3 +39,5 @@ That's it for today, who said learning to code takes long? Click on 'Update', wr
 Oh, and come back next week, cities don't get built out of black rectangles and circles!
 
 Mmm, you're still reading. So you want a challenge do you? Well, wield your keyboard and make a city with more buildings! Don't let them touch each other (or do) and line them up at the bottom (or don't). Grap a screenshot and share it somewhere (like twitter) tagged #learn2code.
+
+![Johannesburg skyline](//{{ site.url }}/img/2014/01/jhb-skyline.png)
