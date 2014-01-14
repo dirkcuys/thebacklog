@@ -14,7 +14,7 @@ tags:
 
 ## Learn to code
 
-![Durban skyline]({{site.url}}img/2014/01/dbn-skyline.png)
+![Durban skyline](//{{ site.url }}img/2014/01/dbn-skyline.png)
 
 In this tutorial you will learn basic coding principles in a visually satisfying way (I hope). You will create something of interest while learning to code. That something of interest will be a side scrolling city skyline and you'll get there in less than 8 hours, promise (you can get your money back if you don't). 
 
