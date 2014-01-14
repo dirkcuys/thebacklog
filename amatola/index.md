@@ -1,0 +1,204 @@
+---
+title: Amatola
+author: dirk
+layout: page
+---
+I did the Amatola hiking trail at the end of 2009! To make a long story short, it&#8217;s an excruciating route where uphill means uphill, downhill means downhill and aggressive bees are aggressive!
+
+## Day 1
+
+<div id="attachment_97" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/09/img_2913.jpg"><img class="size-large wp-image-97" alt="The road there" src="http://thebacklog.net/wp-content/uploads/2013/09/img_2913-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    The road there
+  </p>
+</div>
+
+<div id="attachment_98" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/09/img_2925-e1380581692937.jpg"><img class=" wp-image-98" alt="img_2925" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/09/img_2925-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    The start of the route
+  </p>
+</div>
+
+&nbsp;
+
+<div id="attachment_99" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/09/img_2936-e1380582005199.jpg"><img class="size-large wp-image-99" alt="The short cut while it would have been a short cut!" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/09/img_2936-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    The short cut while it would have been a short cut!
+  </p>
+</div>
+
+A  little later (about 5km gaining about 500m in altitude) we came to a place where the only way forward is to cross a narrow ledge right above a bee hive using a chain. We obviously didn&#8217;t know about the bees until one manage to get hold of my scalp!
+
+<div id="attachment_100" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_2941.jpg"><img class="size-large wp-image-100" alt="Yeah, maybe we should have listened!" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2941-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Yeah, maybe we should have listened!
+  </p>
+</div>
+
+<div id="attachment_101" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_2945.jpg"><img class="size-large wp-image-101" alt="They may call it a timber chute, but it's actually just an uphill that goes forever!" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2945-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    They may call it a timber chute, but it&#8217;s actually just an uphill that goes forever!
+  </p>
+</div>
+
+This timber chute was on the short cut. Seems there is a reason why it&#8217;s shorter in distance!
+
+[<img class="alignnone size-large wp-image-102" alt="img_2953" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2953-1024x768.jpg" width="625" height="468" />][1]
+
+## Day 2
+
+<div id="attachment_103" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_2973.jpg"><img class="size-large wp-image-103" alt="Look at the view, quickly, you have 19km to hike today!" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2973-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Look at the view, quickly, you have 19km to hike today!
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-104" alt="img_2976" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2976-1024x768.jpg" width="625" height="468" />][2]
+
+[<img class="alignnone size-large wp-image-105" alt="img_2994" src="http://thebacklog.net/wp-content/uploads/2013/10/img_2994-1024x768.jpg" width="625" height="468" />][3]
+
+## Day 3
+
+[<img class="alignnone size-large wp-image-106" alt="img_2999" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_2999-1024x768.jpg" width="625" height="468" />][4]
+
+[<img class="alignnone size-large wp-image-107" alt="img_3003" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3003-1024x768.jpg" width="625" height="468" />][5]
+
+[<img class="alignnone size-large wp-image-108" alt="img_3008" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3008-1024x768.jpg" width="625" height="468" />][6]
+
+[<img class="alignnone size-large wp-image-109" alt="img_3027" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3027-1024x768.jpg" width="625" height="468" />][7]
+
+[<img class="alignnone size-large wp-image-110" alt="img_3043" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_3043-1024x768.jpg" width="625" height="468" />][8]
+
+[<img class="alignnone size-large wp-image-111" alt="img_3048" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3048-e1380579611785-768x1024.jpg" width="625" height="833" />][9]
+
+## Day 4
+
+[<img class="alignnone size-large wp-image-112" alt="img_3057" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3057-1024x768.jpg" width="625" height="468" />][10]
+
+<div id="attachment_113" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3071.jpg"><img class="size-large wp-image-113" alt="Giant earth worm!" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3071-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Giant earth worm!
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-114" alt="img_3073" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3073-1024x768.jpg" width="625" height="468" />][11]
+
+<div id="attachment_115" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3114-e1380581866452.jpg"><img class="size-large wp-image-115" alt="Waterfall" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_3114-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Waterfall
+  </p>
+</div>
+
+<div id="attachment_116" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3129-e1380581820681.jpg"><img class="size-large wp-image-116" alt="Waterfall" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_3129-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Waterfall
+  </p>
+</div>
+
+<div id="attachment_117" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3131.jpg"><img class="size-large wp-image-117" alt="Stairs" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3131-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Stairs
+  </p>
+</div>
+
+<div id="attachment_118" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3134-e1380581776199.jpg"><img class="size-large wp-image-118" alt="Some more waterfall" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_3134-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Some more waterfall
+  </p>
+</div>
+
+<div id="attachment_119" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3135.jpg"><img class="size-large wp-image-119" alt="Stairs and hut" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3135-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Stairs and hut
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-120" alt="img_3136" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3136-1024x768.jpg" width="625" height="468" />][12]
+
+## Day 5
+
+[<img class="alignnone size-large wp-image-121" alt="img_3140" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3140-1024x768.jpg" width="625" height="468" />][13] [<img class="alignnone size-large wp-image-122" alt="img_3142" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3142-1024x768.jpg" width="625" height="468" />][14]
+
+<div id="attachment_123" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3149.jpg"><img class="size-large wp-image-123" alt="Wolf valley" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3149-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Wolf valley
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-124" alt="img_3162" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3162-1024x768.jpg" width="625" height="468" />][15] [<img class="alignnone size-large wp-image-125" alt="img_3198" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3198-1024x768.jpg" width="625" height="468" />][16]
+
+<div id="attachment_126" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3199-e1380581735665.jpg"><img class="size-large wp-image-126" alt="O wait, not quite yet" src="http://www.disfunksioneel.co.za/wp-content/uploads/2013/10/img_3199-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    O wait, not quite yet
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-127" alt="img_3200" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3200-1024x768.jpg" width="625" height="468" />][17]
+
+## Day 6
+
+[<img class="alignnone size-large wp-image-128" alt="img_3204" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3204-1024x768.jpg" width="625" height="468" />][18]
+
+<div id="attachment_129" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3219.jpg"><img class="size-large wp-image-129" alt="no shade" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3219-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    no shade
+  </p>
+</div>
+
+<div id="attachment_130" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3222.jpg"><img class="size-large wp-image-130" alt="no shade" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3222-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    no shade
+  </p>
+</div>
+
+<div id="attachment_131" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3230.jpg"><img class="size-large wp-image-131" alt="top" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3230-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    top
+  </p>
+</div>
+
+<div id="attachment_132" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3242.jpg"><img class="size-large wp-image-132" alt="no shade" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3242-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    no shade
+  </p>
+</div>
+
+<div id="attachment_133" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3245.jpg"><img class="size-large wp-image-133" alt="seriously" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3245-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    seriously
+  </p>
+</div>
+
+[<img class="alignnone size-large wp-image-134" alt="img_3260" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3260-1024x768.jpg" width="625" height="468" />][19]
+
+<div id="attachment_135" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3263.jpg"><img class="size-large wp-image-135" alt="Some blisters" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3263-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Some blisters
+  </p>
+</div>
+
+<div id="attachment_136" style="width: 635px" class="wp-caption alignnone">
+  <a href="http://thebacklog.net/wp-content/uploads/2013/10/img_3264.jpg"><img class="size-large wp-image-136" alt="Sorry, I had to put this photo up" src="http://thebacklog.net/wp-content/uploads/2013/10/img_3264-1024x768.jpg" width="625" height="468" /></a><p class="wp-caption-text">
+    Sorry, I had to put this photo up
+  </p>
+</div>
+
+ [1]: http://thebacklog.net/wp-content/uploads/2013/10/img_2953.jpg
+ [2]: http://thebacklog.net/wp-content/uploads/2013/10/img_2976.jpg
+ [3]: http://thebacklog.net/wp-content/uploads/2013/10/img_2994.jpg
+ [4]: http://thebacklog.net/wp-content/uploads/2013/10/img_2999-e1380582461252.jpg
+ [5]: http://thebacklog.net/wp-content/uploads/2013/10/img_3003.jpg
+ [6]: http://thebacklog.net/wp-content/uploads/2013/10/img_3008.jpg
+ [7]: http://thebacklog.net/wp-content/uploads/2013/10/img_3027.jpg
+ [8]: http://thebacklog.net/wp-content/uploads/2013/10/img_3043-e1380581900118.jpg
+ [9]: http://thebacklog.net/wp-content/uploads/2013/10/img_3048-e1380579611785.jpg
+ [10]: http://thebacklog.net/wp-content/uploads/2013/10/img_3057.jpg
+ [11]: http://thebacklog.net/wp-content/uploads/2013/10/img_3073.jpg
+ [12]: http://thebacklog.net/wp-content/uploads/2013/10/img_3136.jpg
+ [13]: http://thebacklog.net/wp-content/uploads/2013/10/img_3140.jpg
+ [14]: http://thebacklog.net/wp-content/uploads/2013/10/img_3142.jpg
+ [15]: http://thebacklog.net/wp-content/uploads/2013/10/img_3162.jpg
+ [16]: http://thebacklog.net/wp-content/uploads/2013/10/img_3198.jpg
+ [17]: http://thebacklog.net/wp-content/uploads/2013/10/img_3200.jpg
+ [18]: http://thebacklog.net/wp-content/uploads/2013/10/img_3204.jpg
+ [19]: http://thebacklog.net/wp-content/uploads/2013/10/img_3260.jpg

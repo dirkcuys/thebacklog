@@ -1,2 +1,3 @@
 timezone: Africa/Johannesburg
 encoding: utf-8
+markdown: redcarpet
