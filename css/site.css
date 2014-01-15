@@ -1,0 +1,10 @@
+code {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-weight: normal;
+    font-size: 12pt;
+    line-height: 1.2;
+}
+
+.highlight {
+    margin-bottom: 1.25rem;
+}

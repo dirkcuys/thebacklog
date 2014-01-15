@@ -22,7 +22,7 @@ We will be using JavaScript - a programming language that runs in your browser. 
 
 Also, there will be stuff you may not understand (most notably below the line "Stuff you don't need to understand" (you will know it when you see it)). Don't be scared, I've been doing this for more than 10 years and I still see lots of stuff I don't understand, I just blame it on other people writing ununderstandable code.
 
-### lesson 1
+### lesson 1 - functions
 
 We are going to skip the boring theory and head over to where the action happens immediately - functions. BOOM!
 
