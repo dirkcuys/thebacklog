@@ -14,7 +14,7 @@ tags:
 
 ## Learn to code
 
-![Durban skyline](//{{ site.url }}/img/2014/01/dbn-skyline.png)
+![Durban skyline]({{ site.url }}/img/2014/01/dbn-skyline.png)
 
 In this tutorial you will learn basic coding principles in a visually satisfying way (I hope). You will create something of interest while learning to code. That something of interest will be a side scrolling city skyline and you'll get there in less than 8 hours, promise (you can get your money back if you don't). 
 
@@ -40,4 +40,4 @@ Oh, and come back next week, cities don't get built out of black rectangles and 
 
 Mmm, you're still reading. So you want a challenge do you? Well, wield your keyboard and make a city with more buildings! Don't let them touch each other (or do) and line them up at the bottom (or don't). Grap a screenshot and share it somewhere (like twitter) tagged #learn2code.
 
-![Johannesburg skyline](//{{ site.url }}/img/2014/01/jhb-skyline.png)
+![Johannesburg skyline]({{ site.url }}/img/2014/01/jhb-skyline.png)
