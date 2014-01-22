@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>The b(ack)log > {{ page.title }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -32,6 +32,11 @@
         </div>
 
         <!-- Add your site or application content here -->
+        <div class="row">
+          <div class="large-12 columns">
+            <h2>{{ page.title }}</h2>
+          </div>
+        </div>
         <div class="row">
           <div class="large-12 columns">
             {{ content }}
