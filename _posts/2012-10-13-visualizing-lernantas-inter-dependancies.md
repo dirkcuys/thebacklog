@@ -20,7 +20,7 @@ This project happened during a flight from Berlin to Durban on the 1st of Octobe
 <script src="//rawgithub.com/dirkcuys/b2d/master/js/jquery-1.7.1.min.js"></script>
 <script src="//rawgithub.com/dirkcuys/b2d/master/js/data.js"></script>
 <script src="//rawgithub.com/dirkcuys/b2d/master/js/circle-graph.js"></script>
-<script type="application/javascript">
+<script type="text/javascript">
   $(document).ready(function(){
     draw();
   })

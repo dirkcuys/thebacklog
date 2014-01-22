@@ -20,8 +20,6 @@ Instead I opted to start with an octahedron and subdivide from there. An octahed
 
 <canvas id="canvas" width="500" height="500"></canvas>
 
-<script type="text/javascript" src="//rawgithub.com/dirkcuys/octasphere/master/js/gl-matrix.js"></script>
-<script type="text/javascript" src="//rawgithub.com/dirkcuys/octasphere/master/js/draw.js"></script>
 <script id="shader-fs" type="x-shader/x-fragment">
     precision mediump float;
     varying vec3 vBC;
@@ -50,8 +48,13 @@ Instead I opted to start with an octahedron and subdivide from there. An octahed
     }
 </script>
 
+<script src="//rawgithub.com/dirkcuys/b2d/master/js/jquery-1.7.1.min.js"></script>
+<script src="//rawgithub.com/dirkcuys/octasphere/master/js/gl-matrix.js"></script>
+<script src="//rawgithub.com/dirkcuys/octasphere/master/js/draw.js"></script>
 <script type="text/javascript">
-  startWebGl();
+  $(document).ready(function(){
+    startWebGl();
+  });
 </script>
 
 I have no idea why octospheres aren&#8217;t more popular? Until my experiment, I&#8217;ve never knowingly encountered one?
