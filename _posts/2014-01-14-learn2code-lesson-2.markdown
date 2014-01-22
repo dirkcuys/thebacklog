@@ -1,5 +1,5 @@
 ---
-title: "Lear to Code: Lesson 2"
+title: "Learn to Code: lesson 2 - variables"
 author: dirk
 permalink: /2014/01/14/learn2code-lesson-2/
 layout: post
@@ -11,8 +11,6 @@ tags:
  - svg
  - variables
 ---
-
-## Learn to code - lesson 2 - variables
 
 Ok, so I got excited and couldn't wait a week until the next lesson. And I know all of you got extremely exited while building your own cities and you want to do more!
 

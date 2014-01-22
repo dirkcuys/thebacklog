@@ -1,5 +1,5 @@
 ---
-title: "Learn to Code: Lesson 1"
+title: "Learn to Code"
 author: dirk
 layout: post
 permalink: /2014/01/13/learn2code-lesson-1/
@@ -11,8 +11,6 @@ tags:
  - javascript
  - svg
 ---
-
-## Learn to code
 
 ![Durban skyline]({{ site.url }}/img/2014/01/dbn-skyline.png)
 
