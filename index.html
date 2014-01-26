@@ -8,24 +8,18 @@ layout: default
   </div>
 </div>
 
-
 <div class="row">
-<ul class="small-block-grid-1" >
-{% for post in site.posts %}
-
-<li>
-<div class="ow">
-  <div class="arge-12 columns">
-    <div class="anel">
-      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-      {% if post.header_image %}
-        <img src="{{site.url}}{{post.header_image}}">
-      {% endif %}
+  <ul class="small-block-grid-1" >
+  {% for post in site.posts %}
+  <li>
+    <div class="large-12 columns">
+        <h2><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        {% if post.header_image %}
+          <img src="{{ baseurl }}{{ post.header_image }}">
+        {% endif %}
     </div>
-  </div>
-</div>
-</li>
-{% endfor %}
-</ul>
+  </li>
+  {% endfor %}
+  </ul>
 </div>
 
