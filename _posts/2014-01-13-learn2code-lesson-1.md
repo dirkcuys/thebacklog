@@ -28,7 +28,7 @@ Head over to [this url](http://jsfiddle.net/dirkcuys/nXUQ4/), and enter ```recta
 
 Great! You've written your first program! And you can show it to someone, you can even pretend it's abstract art by adding another ```rectangle()``` with numbers other than 20, 20, 40, 40. Go ahead and try that!
 
-What you have done in fancy computer language is you 'called a function'. Functions have many definitions, but typically they do something (usefull). In this instance the function drew a black square on the screen. The four numbers that follows the function are called parameters. The first two are the x and the y position and the next two are the width and the height. See if you can figure out how they change the shape of the square and move it around.
+What you have done in fancy computer language is you 'called a function'. Functions have many definitions, but typically they do something (useful). In this instance the function drew a black square on the screen. The four numbers that follows the function are called parameters. The first two are the x and the y position and the next two are the width and the height. See if you can figure out how they change the shape of the square and move it around.
 
 Not all functions take the same parameters, for instance, try this ```circle(20, 20, 40);```. You should now see a circle on your screen. Now the artist in you can go crazy!
 
