@@ -1,5 +1,5 @@
 ---
-title: "Learn to Code"
+title: "Hacer en español"
 author: dirk
 layout: post
 permalink: /2014/02/27/hacer-en-espanol/
