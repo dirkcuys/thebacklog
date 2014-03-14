@@ -2,8 +2,8 @@
 title: "La masa de pizza"
 author: dirk
 layout: post
-categories:
- - espanol
+tags: [unlisted]
+categories: [espanol]
 ---
 
 ![Un foto de pizza]({{site.baseurl}}/img/2014/02/pizza.jpg)

@@ -11,14 +11,17 @@ layout: default
 <div class="row">
   <ul class="small-block-grid-1" >
   {% for post in site.posts %}
-  <li>
-    <div class="large-12 columns">
-        <h2><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        {% if post.header_image %}
-          <img src="{{ baseurl }}{{ post.header_image }}">
-        {% endif %}
-    </div>
-  </li>
+    {% if post.tags contains 'unlisted' %}
+    {% else %}
+      <li>
+        <div class="large-12 columns">
+            <h2><a href="{{ baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            {% if post.header_image %}
+              <img src="{{ baseurl }}{{ post.header_image }}">
+            {% endif %}
+        </div>
+      </li>
+    {% endif %}
   {% endfor %}
   </ul>
 </div>

@@ -3,8 +3,8 @@ title: "Hacer en español"
 author: dirk
 layout: post
 permalink: /2014/02/27/hacer-en-espanol/
-categories:
- - espanol
+tags: [unlisted]
+categories: [espanol]
 ---
 
 Hola mi amigos
