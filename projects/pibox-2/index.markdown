@@ -1,0 +1,26 @@
+---
+title: PiBox 2
+author: dirk
+layout: page
+---
+My [Raspberry Pi](http://www.raspberrypi.org/) needed a new home and I didn&#8217;t feel like killing the planet more. I made a simple case from an old cereal box that doesn&#8217;t require any glue! It is a very simple case and only requires some old cardboard and a carpet knife.
+
+This is the box unfolded:
+
+![Image of the unfolded box][1]
+
+This is the folded box from the one side:
+
+![Image of the folded box from the side where the USB and Ethernet ports are.][2]
+
+This is the folded box from the other side:
+
+![Image of the folded box from the side where the SD card and power cable go.][3]
+
+And here is a printout that you can use to make your very own Pi Box! Click the image to download a printable PDF.
+
+[![Image of the printable PDF]({{site.baseurl}}/img/projects/pibox-v2.png)](http://thebacklog.net/wp-content/uploads/2013/10/pibox2-pub.pdf)
+
+ [1]: http://thebacklog.net/wp-content/uploads/2013/10/DSC_5238.jpg
+ [2]: http://thebacklog.net/wp-content/uploads/2013/10/DSC_5233.jpg
+ [3]: http://thebacklog.net/wp-content/uploads/2013/10/DSC_5231.jpg

@@ -11,6 +11,13 @@ layout: base
   <div class="large-12 columns">
   <ul class="primary-nav inline-list">
     <li class="active"><a href="{{site.baseurl}}/bookshelf/">bookshelf</a></li>
+    <li>
+      <a href="#" data-dropdown="id-project-dropdown" data-options="is_hover:true">projects <i class="fa fa-caret-down"></i></a>
+      <ul id="id-project-dropdown" class="f-dropdown" data-dropdown-content>
+        <li><a href="{{site.baseurl}}/projects/pibox-2/">pibox 2</a></li>
+        <li><a href="{{site.baseurl}}/projects/isla-falta/">isla falta</a></li>
+      </ul>
+    </li>
     <li><a href="{{site.baseurl}}/about/">about</a></li>
   </ul>
   </div>
