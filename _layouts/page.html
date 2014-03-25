@@ -1,21 +1,15 @@
 ---
-layout: base
+layout: default
 ---
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h1><a href='{{ site.baseurl }}/'>The b(ack)log</a></h1>
-          </div>
-        </div>
+<div class="row">
+  <div class="large-12 columns">
+    <h2>{{ page.title }}</h2>
+  </div>
+</div>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <h2>{{ page.title }}</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="large-12 columns">
-            {{ content }}
-          </div>
-        </div>
+<div class="row">
+  <div class="large-12 columns">
+    {{ content }}
+  </div>
+</div>
