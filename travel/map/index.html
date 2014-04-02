@@ -1,0 +1,88 @@
+---
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The b(ack)log > {{ page.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <!--link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"-->
+        <link rel="stylesheet" href="{{ site.url }}/css/foundation.css" />
+        <link rel="stylesheet" href="{{ site.url }}/css/syntax.css" />
+        <link rel="stylesheet" href="{{ site.url }}/css/site.css" />
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+        <script src="{{ site.url }}/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <div class="row">
+          <div class="large-12 columns">
+            <h1><a href='{{ site.url }}/'>The b(ack)log</a></h1>
+          </div>
+        </div>
+
+        <!-- Add your site or application content here -->
+        <div class="row">
+          <div class="large-12 columns">
+            <h2>{{ page.title }}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <div id="map" style="height:800px;"></div>
+
+            <script src="{{site.baseurl}}/js/togeojson.js"></script>
+            <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+            <script>
+              var map = L.map('map').setView([-29.8938, 31.0472], 1);
+             
+              L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+              }).addTo(map);
+             
+              window.onload = function(){
+                  $.ajax('{{site.baseurl}}/travel/map/data.json', function() {
+                      console.log( "success" );
+                  })
+                  .done(function(data) {
+                      console.log( "second success" );
+                      L.geoJson(data).addTo(map);
+                  })
+                  .fail(function(jqxhr, textStatus, error) {
+                      var err = textStatus + ", " + error;
+                      console.log( "error: " + err );
+                  })
+                  .always(function() {
+                      console.log( "complete" );
+                  });
+              };
+     
+            </script>
+          </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ site.url }}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!--script src="{{ site.url }}/js/plugins.js"></script>
+        <script src="{{ site.url }}/js/main.js"></script-->
+        <script src="{{ site.url }}/js/foundation.min.js"></script>
+        <script>
+          $(document).foundation();
+        </script>
+        {% include google_analytics.html %}
+    </body>
+</html>

@@ -1,0 +1,117 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [31.01294, -29.81732]
+            },
+            "properties": {
+                "name": "Durban"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-70.6266, -33.4592]
+            },
+            "properties": {
+                "name": "Santiago"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [13.3855, 52.5109]
+            },
+            "properties": {
+                "name": "Berlin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [28.9789, 41.0167]
+            },
+            "properties": {
+                "name": "Istanbul"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-58.4353, -34.6223]
+            },
+            "properties": {
+                "name": "Buenos Aires"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.9508, 40.7087]
+            },
+            "properties": {
+                "name": "New York"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-71.0605, 42.3590]
+            },
+            "properties": {
+                "name": "Boston"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.2398, -39.8148]
+            },
+            "properties": {
+                "name": "Valdivia"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-71.97863, -13.51675]
+            },
+            "properties": {
+                "name": "Cusco"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-122.47852, 37.81990]
+            },
+            "properties": {
+                "name": "San Francisco"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-90.0950, 29.9288]
+            },
+            "properties": {
+                "name": "New Orleans"
+            }
+        }
+
+    ]
+}
+
