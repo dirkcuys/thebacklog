@@ -8,7 +8,7 @@ These are some of the books currently on my bookshelf:
 *   [Musicophilia][1] (Currently reading)
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
-*   Harry Potter - La cámara secreta
+*   [Harry Potter - La cámara secreta](https://es.wikipedia.org/wiki/Harry_Potter_y_la_c%C3%A1mara_secreta)
 *   [Long Walk to Freedom][2]
 *   [20000 leagues under the sea][4] &#8211; Jules Verne
 *   [Around the world in 80 days][5] &#8211; Jules Verne
