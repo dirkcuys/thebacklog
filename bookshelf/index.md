@@ -6,10 +6,11 @@ layout: page
 These are some of the books currently on my bookshelf:
 
 *   [Musicophilia][1] (Currently reading)
-*   [Long Walk to Freedom][2] (Currently reading)
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
-*   [20000 leagues under the sea][4] &#8211; Jules Verne (currently reading)
+*   Harry Potter - La cámara secreta
+*   [Long Walk to Freedom][2]
+*   [20000 leagues under the sea][4] &#8211; Jules Verne
 *   [Around the world in 80 days][5] &#8211; Jules Verne
 *   [Maisie Dobbs][6]
 *   [Acid Alex][7]
