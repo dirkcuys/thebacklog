@@ -1,0 +1,19 @@
+---
+---
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0">
+    <channel>
+    <title>TheBacklog.net</title>
+    <link>http://thebacklog.net</link>
+    <lang>en-za</lang>
+    <description>Geekery, dribble, etc.</description>
+    {% for post in site.posts %}
+    <item>
+        <title>{{post.title}}</title>
+        <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
+        <description>{{ post.excerpt | strip_html}}</description>
+        <guid>{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+    </item>
+    {% endfor %}
+    </channel>
+</rss>
