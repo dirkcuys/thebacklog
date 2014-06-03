@@ -3,7 +3,7 @@ title: Learning by playing and tinkering
 author: dirk
 layout: post
 tags: [tinkering, education, play]
-categories: [education]
+categories: [writing]
 ---
 
 I joined the session from [Learning Creative Learning (LCL)](http://learn.media.mit.edu/) today about playing and learning. During the breakout we were prompted to relate an experience about tinkering with physical objects and tinkering with technology.
