@@ -6,7 +6,7 @@ tags: [education]
 categories: [writing]
 ---
 
-I’ve learned many things through the web and alternative sources. Working at P2PU for the past 2 years gave me some perspective on how I learned informally.  Here are some thoughts on informal learning:
+I’ve learned many things through the web and alternative sources. Working at [P2PU](http://p2pu.org) for the past 2 years gave me some perspective on how I learned informally.  Here are some thoughts on informal learning:
 
 ### if you don’t feel a need to plan, don’t
 
@@ -35,6 +35,10 @@ I didn’t reflect much while styding, I didn’t need to since the 4 year path 
 ### act on reflection
 
 There are suboptimal ways to learn. If you only reflect and never act on those reflections, you will keep on learning in suboptimal ways. Compliment reflection with action, that will make sure than you fail in new ways and possibly even succeed.
+
+### learn with people
+
+I've learned many things on my own.
 
 ### show what you've learned
 
