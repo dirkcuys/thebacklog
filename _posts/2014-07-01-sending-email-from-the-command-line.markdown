@@ -15,6 +15,6 @@ server.sendmail('from@mail.com', 'to@mail.com', msg)
 server.quit()
 {% endhighlight %}
 
-Just copy and past this into a file and then run it using python: `python test_smtp.py`.
+Copy and paste this into a file and run it using python: `python test_smtp.py`.
 
-I just needed to test SMTP credentials without installing a mail client or something worse, so the script is pretty basic.
+I had to test SMTP credentials without installing a mail client (or [something](http://sendmail.org) [worse](http://postfix.org)...), so the script is pretty basic.
