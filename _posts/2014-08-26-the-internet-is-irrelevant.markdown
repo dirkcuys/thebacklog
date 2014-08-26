@@ -1,5 +1,5 @@
 ---
-title: "The internet is irrelevant!"
+title: "Is the internet still relevant?"
 layout: post
 ---
 
