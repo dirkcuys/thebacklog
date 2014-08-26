@@ -23,6 +23,6 @@ The internet is like the PC industry of 15 years ago - full of freeware and shar
 
 The situation is bleak! The clouds are falling and the solutions we need are drastic!
 
-The problem is that we currently use and care about the *Open Internet* while we should be concerned with the *Free Internet*. For context, read [this article from the FSF](https://www.gnu.org/philosophy/open-source-misses-the-point.html) on the distinction between open source software and free software.
+The problem is that we currently use and care about the **Open Internet** while we should be concerned with the **Free Internet**. For context, read [this article from the FSF](https://www.gnu.org/philosophy/open-source-misses-the-point.html) on the distinction between open source software and free software.
 
 I'll close with a question - do you think freedom matters for the internet? If so, which freedoms and why?
