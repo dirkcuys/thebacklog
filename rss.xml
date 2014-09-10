@@ -8,12 +8,15 @@
     <lang>en-za</lang>
     <description>Geekery, dribble, etc.</description>
     {% for post in site.posts %}
+    {% if post.tags contains 'unlisted' %}
+    {% else %}
     <item>
         <title>{{post.title}}</title>
         <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
         <description>{{ post.excerpt | strip_html}}</description>
         <guid>{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
     </item>
+    {% endif %}
     {% endfor %}
     </channel>
 </rss>
