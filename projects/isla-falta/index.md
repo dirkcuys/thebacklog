@@ -23,7 +23,7 @@ After this I exported the map to gimp and played with the raster image a little:
 
 [<img class="alignnone size-medium wp-image-186" alt="isla-falta-hm-1024-918" src="http://thebacklog.net/wp-content/uploads/2013/10/isla-falta-hm-1024-918-300x268.png" width="300" height="268" />][5]
 
-This feels like it is getting somewhere. I can imagine seeing the map displayed somewhere and the height map looks nice, but the actual terrain is rather bland and when yo look at it closely it is very artificial.
+This feels like it is getting somewhere. I can imagine seeing the map displayed somewhere and the heightmap looks nice, but the actual terrain is rather bland and when yo look at it closely it is very artificial.
 
 [<img class="alignnone size-medium wp-image-192" alt="falta-render" src="http://thebacklog.net/wp-content/uploads/2013/10/falta-render-300x168.png" width="300" height="168" />][6]
 
@@ -33,7 +33,7 @@ I decided to experiment with the diamond square algorithm. It can be used to gen
 
 [<img class="alignnone size-medium wp-image-190" alt="combined-small" src="http://thebacklog.net/wp-content/uploads/2013/10/combined-small-300x75.png" width="300" height="75" />][8]
 
-And this is where I&#8217;m at at the moment. The height map can be used to generate a 2.5D terrain that looks somewhat realistic. It still feels artificial, the peaks doesn&#8217;t look that great and the resolution of the height map is static, but it&#8217;s getting better!
+And this is where I&#8217;m at at the moment. The heightmap can be used to generate a 2.5D terrain that looks somewhat realistic. It still feels artificial, the peaks doesn&#8217;t look that great and the resolution of the heightmap is static, but it&#8217;s getting better!
 
 [<img class="alignnone size-medium wp-image-197" alt="falta-render-2" src="http://thebacklog.net/wp-content/uploads/2013/10/falta-render-2-300x168.png" width="300" height="168" />][9]
 
