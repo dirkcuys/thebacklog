@@ -9,7 +9,7 @@ The idea came from a few places, first &#8211; at a modelling and simulation con
 
 Second, I read about a game, [The Wittness][1], that is set entirely on a single Island. Maybe games like Myst and Riven, [My Min City][2] and a bunch of others also had an influence.
 
-And thirdly, the concept of procedurally generating terrain, islands and even complete planets and environments greatly intrigues me.
+And thirdly, the concept of procedurally generating terrain, islands and even complete planets and environments intrigues me.
 
 I started by playing around in blender and after some unsatisfying results I took a step back. Direct manipulation is nice, but I also want to create something generative.
 
@@ -23,7 +23,7 @@ After this I exported the map to gimp and played with the raster image a little:
 
 [<img class="alignnone size-medium wp-image-186" alt="isla-falta-hm-1024-918" src="http://thebacklog.net/wp-content/uploads/2013/10/isla-falta-hm-1024-918-300x268.png" width="300" height="268" />][5]
 
-This feels like it is getting somewhere. I can imagine seeing the map displayed somewhere and the heightmap looks nice, but the actual terrain is rather bland and when yo look at it closely it is very artificial.
+This feels like it is getting somewhere. I can imagine seeing the map displayed somewhere and the heightmap looks nice, but the actual terrain is rather bland and when you look at it closely it is very artificial.
 
 [<img class="alignnone size-medium wp-image-192" alt="falta-render" src="http://thebacklog.net/wp-content/uploads/2013/10/falta-render-300x168.png" width="300" height="168" />][6]
 
