@@ -9,6 +9,7 @@ These are some of the books currently on my bookshelf:
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
 *   Mi nombre es Malarossa - Hernán Rivera Letelier (Currently reading)
+*   I am legend - Richard Matheson
 *   [Witboy in Africa (Afrikaans edition) - Deon Maas](http://www.kalahari.com/Books/Witboy-in-Africa_p_35650671)
 *   [Harry Potter - La cámara secreta](https://es.wikipedia.org/wiki/Harry_Potter_y_la_c%C3%A1mara_secreta)
 *   [Life of Pi](https://en.wikipedia.org/wiki/Life_of_Pi)
