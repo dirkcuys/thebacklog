@@ -12,28 +12,30 @@
         <link rel="alternate" type="application/rss+xml" title="The Backlog" href="http://thebacklog.net/rss.xml" />
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/foundation.css" />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
+        {% if page.styles %}
+          {% include {{page.styles}} %}
+        {% endif %}
         <script src="{{ site.baseurl }}/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/WebPage">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
         {{ content }}
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <!--script src="js/plugins.js"></script>
-        <script src="js/main.js"></script-->
         <script src="{{ site.baseurl }}/js/foundation.min.js"></script>
         <script>
           $(document).foundation();
         </script>
+        {% if page.scripts %}
+          {% include {{page.scripts}} %}
+        {% endif %}
         {% include google_analytics.html %}
     </body>
 </html>

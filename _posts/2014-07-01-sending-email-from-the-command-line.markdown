@@ -5,7 +5,7 @@ layout: post
 
 Here is a script you can use to send email from a linux command line if you need to use TLS (Transport Layer Security).
 
-{% highlight Python %}
+{% highlight python %}
 import smtplib
 server = smtplib.SMTP('stmp.example.net')
 server.starttls()

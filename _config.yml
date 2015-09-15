@@ -1,6 +1,5 @@
 timezone: Africa/Johannesburg
 encoding: utf-8
-markdown: redcarpet
 baseurl:
 url: http://thebacklog.net
 permalink: /:year/:month/:day/:title/

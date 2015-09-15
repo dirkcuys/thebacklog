@@ -1,9 +1,23 @@
+---
+---
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import "normalize";
+@import "settings";
+@import "foundation";
+
 .primary-nav {
     font-size: 18pt;
 }
 
+pre > code {
+    display: block;
+}
+
 code {
+    border: 0;
+    border-style: none;
     color: #222222;
+    background-color: inherit;
     font-family: Consolas,"Liberation Mono",Courier,monospace;
     font-weight: normal;
     font-size: 12pt;
