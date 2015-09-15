@@ -1,6 +1,7 @@
 ---
 title: Timelapse of a harbour in Cartagena
 layout: post
+header_image: /img/2014/09/cartagena.jpg
 tags: [timelapse]
 ---
 
