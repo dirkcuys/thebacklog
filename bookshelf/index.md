@@ -9,6 +9,12 @@ These are some of the books currently on my bookshelf:
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
 *   Mi nombre es Malarossa - Hernán Rivera Letelier (Currently reading)
+*   Cry, the beloved country - Alan Paton
+*   800 leagues on the Amazon - Jules Verne
+*   Carpe Jugulum - Terry Pratchett
+*   A short history of nearly everything - Bill Bryson
+*   The curious case of Dr. Jekyll and Mr. Hyde
+*   The alchimist (Spanish version: El Alquimista) - Paulo Coelho
 *   Mi pais inventado - Isabel Allende
 *   I am legend - Richard Matheson
 *   [Witboy in Africa (Afrikaans edition) - Deon Maas](http://www.kalahari.com/Books/Witboy-in-Africa_p_35650671)
