@@ -1,7 +1,7 @@
 ---
 title: Otter Hiking trail
 author: dirk
-layout: page
+layout: post
 ---
 I did the Otter hiking trail in Nature&#8217;s Valley during December 2011. It is one of South Africa&#8217;s best hiking trails, covering 42km of unspoiled coast. Getting a reservation is not easy, but more than worth it!
 
