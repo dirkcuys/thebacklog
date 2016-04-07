@@ -10,23 +10,11 @@ layout: base
 <div class="row">
   <div class="large-12 columns">
   <ul class="primary-nav inline-list">
-    <li class="active"><a href="{{site.baseurl}}/bookshelf/">bookshelf</a></li>
-    <li>
-      <a href="#" data-dropdown="id-project-dropdown" data-options="is_hover:true">projects <i class="fa fa-caret-down"></i></a>
-      <ul id="id-project-dropdown" class="f-dropdown" data-dropdown-content>
-        <li><a href="{{site.baseurl}}/projects/pibox-2/">pibox 2</a></li>
-        <li><a href="{{site.baseurl}}/projects/isla-falta/">isla falta</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#" data-dropdown="id-hiking-dropdown" data-options="is_hover:true">hiking <i class="fa fa-caret-down"></i></a>
-      <ul id="id-hiking-dropdown" class="f-dropdown" data-dropdown-content>
-        <li><a href="{{site.baseurl}}/hiking/amatola/">Amatola</a></li>
-        <li><a href="{{site.baseurl}}/hiking/otter-hiking-trail/">The Otter</a></li>
-      </ul>
-    </li>
-
-    <li><a href="{{site.baseurl}}/about/">about</a></li>
+    <li {% include active_nav.html url='/' %}><a href="{{site.baseurl}}/">about</a></li>
+    <li {% include active_nav.html url='/projects/' %}><a href="{{site.baseurl}}/projects/">projects</a></li>
+    <li {% include active_nav.html url='/bookshelf/' %}><a href="{{site.baseurl}}/bookshelf/">bookshelf</a></li>
+    <li {% include active_nav.html url='/hiking/' %}><a href="{{site.baseurl}}/hiking/">hiking</a></li>
+    <li {% include active_nav.html url='/blog/' %}><a href="{{site.baseurl}}/blog/">blog</a></li>
   </ul>
   </div>
 </div>

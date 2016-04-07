@@ -12,7 +12,7 @@ I have taken several projects from the conceptual phase to deployment, from gath
 
 I prefer back-end and conceptual development and enjoy being challenged by problems that require more than the conventional solution.
 
-I work for [P2PU](https://p2pu.org) where we are focusing on bringing learning on the internet to actual people in physical places.
+I work for [P2PU](https://www.p2pu.org) where we are focusing on bringing learning on the internet to actual people in physical places.
 
 I'm also interested in the maker movement, open source, photography, the outdoors, learning new things and more.
 

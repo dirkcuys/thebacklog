@@ -1,0 +1,17 @@
+---
+title: projects
+author: dirk
+layout: page
+---
+
+<p>These are some things I've worked on - some for fun and some for profit and some for both!</p>
+
+{% for project in site.projects|dictsort:'importance' %}
+<h2>{{ project.title }}</h2>
+<p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
+
+{{ project.output }}
+
+{% endfor %}
+
+

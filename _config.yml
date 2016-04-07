@@ -3,3 +3,21 @@ encoding: utf-8
 baseurl:
 url: http://thebacklog.net
 permalink: /:year/:month/:day/:title/
+
+collections:
+  - projects
+
+defaults:
+  -
+    scope:
+      path: "projects" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      permalink: /:categories/:title/
+  -
+    scope:
+      path: "hiking"
+      type: "posts"
+    values:
+      permalink: /:categories/:title/
+

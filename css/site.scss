@@ -1,9 +1,9 @@
 ---
 ---
-@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 @import "normalize";
 @import "settings";
 @import "foundation";
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 
 .primary-nav {
     font-size: 18pt;
@@ -39,4 +39,15 @@ code {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.profile-photo {
+    /*text-align: center;*/
+    img {
+        max-width: 500px;
+    }
+}
+
+.project-tech {
+    color: #777;
 }
