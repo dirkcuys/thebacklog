@@ -9,6 +9,8 @@ These are some of the books currently on my bookshelf:
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
 *   Mi nombre es Malarossa - Hernán Rivera Letelier (Currently reading)
+*   Neuromancer - William Gibson (Currently reading)
+*   Cinco cerditos - Agatha Christie
 *   Moxyland - Lauren Beukes
 *   Eon - Greg Bear
 *   A canticle for Leibowitz
