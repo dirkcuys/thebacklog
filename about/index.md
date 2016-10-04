@@ -16,4 +16,4 @@ I work for [P2PU](https://www.p2pu.org) where we are focusing on bringing learni
 
 I'm also interested in the maker movement, open source, photography, the outdoors, learning new things and more.
 
-Find me on [twitter](https://twitter.com/riskycud) or contact me via email - dirkXcXuys@gmail.com, just remove the all the "X"s.
+Find me on [twitter](https://twitter.com/riskycud) or contact me via email - dirkXcXuys@gmail.com, just remove all the "X"s.
