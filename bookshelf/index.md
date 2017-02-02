@@ -8,8 +8,9 @@ These are some of the books currently on my bookshelf:
 *   [Musicophilia][1] (Currently reading)
 *   Age of Napoleon (Currently reading)
 *   [Immortality][3]  (Currently reading)
+*   God Emperor of Dune - Frank Herbert
 *   Mi nombre es Malarossa - Hernán Rivera Letelier (Currently reading)
-*   Neuromancer - William Gibson (Currently reading)
+*   Neuromancer - William Gibson
 *   Cinco cerditos - Agatha Christie
 *   Moxyland - Lauren Beukes
 *   Eon - Greg Bear
