@@ -5,11 +5,10 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
-*   [Musicophilia][1] (Currently reading)
-*   Age of Napoleon (Currently reading)
-*   [Immortality][3]  (Currently reading)
+*   Harry Potter and the Goblet of Fire
+*   Harry Potter and the prisoner of Azkaban
+*   La Sombra del viento (in progress)
 *   God Emperor of Dune - Frank Herbert
-*   Mi nombre es Malarossa - Hernán Rivera Letelier (Currently reading)
 *   Neuromancer - William Gibson
 *   Cinco cerditos - Agatha Christie
 *   Moxyland - Lauren Beukes
