@@ -5,8 +5,17 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Artemis - Andy Weir
+*   Seveneves
+*   Spud
+*   The Martian - Andy Weir
+*   Harry Potter and the Deathly Hallows
+*   Harry Potter and the Half-Blood Prince
+*   Harry Potter and the Order of the Phoenix
 *   Harry Potter and the Goblet of Fire
-*   Harry Potter and the prisoner of Azkaban
+*   Harry Potter and the Prisoner of Azkaban
+*   Amped
+*   The Handmaids Tale
 *   La Sombra del viento (in progress)
 *   God Emperor of Dune - Frank Herbert
 *   Neuromancer - William Gibson
