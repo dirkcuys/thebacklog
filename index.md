@@ -6,13 +6,15 @@ My name is Dirk and this is my blog, erm website.
 
 This is what I look like.
 
-<div class="profile-photo">
+<div class="swipe-container">
+<div class="profile-photo swipe-left">
 <p><img src="{{site.baseurl}}/img/profile.jpg" alt="A photo of me"></p>
 </div>
 
 <p>And this is my evil twin with a beard.</p>
-<div class="profile-photo">
+<div class="profile-photo swipe-right">
 <p><img src="{{site.baseurl}}/img/profile-beard.jpg" alt="A photo of me with a beard"></p>
+</div>
 </div>
 
 Have a close look, you never know who you might run in to.
@@ -27,7 +29,7 @@ I write software for the web using HTLM 5, JavaScript & Python. Have a look at t
 
 I also have a life. I like to [read]({{site.baseurl}}/bookshelf/), [walk around for extended periods of time with a heavy bag, dirty clothes and without enough food or wine]({{site.baseurl}}/hiking/) and make timelapses with an old camera.
 
-Find me on [twitter](https://twitter.com/riskycud), [GitHub](https://github.com/dirkcuys/) or contact me via email - dirkXcXuys@gmail.com, just remove all the "X"s. If you send me a pull request you'll have my full attention.
+Find me on [twitter](https://twitter.com/code27_), [GitHub](https://github.com/dirkcuys/) or contact me via email - dirkXcXuys@gmail.com, just remove all the "X"s. If you send me a pull request you'll have my full attention.
 
 <br/>
 <br/>
