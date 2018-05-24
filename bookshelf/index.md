@@ -5,6 +5,7 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   The Wonderful Wizard of Oz
 *   Artemis - Andy Weir
 *   Seveneves
 *   Spud
