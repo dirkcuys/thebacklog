@@ -5,7 +5,7 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
-*   A hat full of sky - Terry Prachett (reading)
+*   A hat full of sky - Terry Prachett
 *   The Wonderful Wizard of Oz
 *   Artemis - Andy Weir
 *   Seveneves
