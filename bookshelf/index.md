@@ -5,6 +5,8 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Do Androids Dream of Electric Sheep - Philip K. Dick (reading)
+*   2001: A Space Odyssey - Arthur C. Clarke
 *   A hat full of sky - Terry Prachett
 *   The Wonderful Wizard of Oz
 *   Artemis - Andy Weir
