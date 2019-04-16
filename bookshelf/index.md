@@ -62,6 +62,7 @@ These are some of the books currently on my bookshelf:
 *   To the Point: The no holds barred autobiography
 *   Travels in the land of Kubilai Khan
 *   Great Expectations
+*   Valverde's Gold
 
  [1]: http://musicophilia.com/
  [2]: http://en.wikipedia.org/wiki/Long_Walk_to_Freedom
