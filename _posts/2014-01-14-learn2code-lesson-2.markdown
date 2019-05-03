@@ -60,7 +60,7 @@ Recreate the city that you created in the previous lesson, but this time using v
 
 Until next, uhm, time.
 
-<script src="https://rawgithub.com/wout/svg.js/master/dist/svg.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.12/svg.min.js"></script>
 <script type="text/javascript">
 function rect(x, y, width, height){
         var draw = SVG('canvas').size(1000, 200);
