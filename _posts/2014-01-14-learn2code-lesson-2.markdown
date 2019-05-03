@@ -63,21 +63,21 @@ Until next, uhm, time.
 <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.12/svg.min.js"></script>
 <script type="text/javascript">
 function rect(x, y, width, height){
-        var draw = SVG('canvas').size(1000, 200);
-            var rect = draw.rect(width, height);
-                rect.transform({x: x, y: y});
+  var draw = SVG('#canvas').size(1000, 200);
+  var rect = draw.rect(width, height);
+  rect.transform({x: x, y: y});
 }
 
 function circle(x, y, radius){
-        var draw = SVG('canvas').size(1000, 200);
-            var circle = draw.circle(radius);
-                circle.transform({x: x-radius/2.0, y: y-radius/2.0});
+  var draw = SVG('#canvas').size(1000, 200);
+  var circle = draw.circle(radius);
+  circle.transform({x: x-radius/2.0, y: y-radius/2.0});
 }
 
 function text(x, y, text){
-        var draw = SVG('canvas').size(1000, 200);
-            var txt = draw.text(text);
-                txt.transform(x, y);
+  var draw = SVG('#canvas').size(1000, 200);
+  var txt = draw.text(text);
+  txt.transform(x, y);
 }
 
 var base = 200;
