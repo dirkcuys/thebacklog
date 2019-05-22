@@ -1,5 +1,6 @@
 ---
 title: Elements of online learning experiences
+layout: post
 ---
 Working for P2PU I've spent a lot of time developing, or advising on the creation of online learning experiences. Even though we're (P2PU) focussing on getting people together in real life these days, I felt these notes from 2014 deserve better than rotting in a Google doc. It is a little brain dumpy and dusty, but I left it that way for the aesthetic.
 

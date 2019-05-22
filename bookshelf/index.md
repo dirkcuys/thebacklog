@@ -5,9 +5,11 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   The Ganymede Takeover - Philip K. Dick
+*   Making Money - Terry Pratchett
 *   Do Androids Dream of Electric Sheep - Philip K. Dick (reading)
 *   2001: A Space Odyssey - Arthur C. Clarke
-*   A hat full of sky - Terry Prachett
+*   A hat full of sky - Terry Pratchett
 *   The Wonderful Wizard of Oz
 *   Artemis - Andy Weir
 *   Seveneves
