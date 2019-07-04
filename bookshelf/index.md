@@ -5,9 +5,11 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   American Gods - Neil Gaiman (reading)
+*   Leviathan Wakes (The Expanse #1) - James S.A. Corey 
 *   The Ganymede Takeover - Philip K. Dick
 *   Making Money - Terry Pratchett
-*   Do Androids Dream of Electric Sheep - Philip K. Dick (reading)
+*   Do Androids Dream of Electric Sheep - Philip K. Dick
 *   2001: A Space Odyssey - Arthur C. Clarke
 *   A hat full of sky - Terry Pratchett
 *   The Wonderful Wizard of Oz
