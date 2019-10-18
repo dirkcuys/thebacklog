@@ -5,7 +5,11 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
-*   American Gods - Neil Gaiman (reading)
+*   Cibola burn (The expanse book #4) - reading
+*   Abaddon's gate (The expanse book #3)
+*   Caliban's war (The expanse book #2)
+*   Heretics of Dune (book 5)
+*   American Gods - Neil Gaiman
 *   Leviathan Wakes (The Expanse #1) - James S.A. Corey 
 *   The Ganymede Takeover - Philip K. Dick
 *   Making Money - Terry Pratchett
