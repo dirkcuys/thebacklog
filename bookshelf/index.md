@@ -5,7 +5,8 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
-*   Cibola burn (The expanse book #4) - reading
+*   Chapterhouse: Dune
+*   Cibola burn (The expanse book #4)
 *   Abaddon's gate (The expanse book #3)
 *   Caliban's war (The expanse book #2)
 *   Heretics of Dune (book 5)
