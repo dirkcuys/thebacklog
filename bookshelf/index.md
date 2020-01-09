@@ -1,10 +1,13 @@
 ---
 title: bookshelf
-author: dirk
 layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   The Road - Cormac McCarthy
+*   Three body problem
+*   Babylon's ashes (The expanse book #6)
+*   Nemesis games (The expanse book #5)
 *   Chapterhouse: Dune
 *   Cibola burn (The expanse book #4)
 *   Abaddon's gate (The expanse book #3)
