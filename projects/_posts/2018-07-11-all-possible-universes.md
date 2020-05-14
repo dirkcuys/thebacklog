@@ -1,3 +1,7 @@
+---
+header_image: /img/2018/universe-banner.png
+---
+
 Have you ever misplaced a photo and you just can't find it? Well, I have, but instead of wallowing in despair, I decided to do something about it.
 
 If you think about it, photos are just a bunch of pixels, and pixels are just a bunch of numbers. If you put enough random numbers together, eventually you'll end up with the photo you've deleted!
