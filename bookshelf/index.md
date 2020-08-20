@@ -4,6 +4,13 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Treasure Island
+*   The Fifth Season
+*   Semiosis
+*   Ready Player One
+*   Juliet, Naked 
+*   Tiamat's Wrath (The Expanse book #8)
+*   Persepolis Rising (The Expanse book #7)
 *   The Road - Cormac McCarthy
 *   Three body problem
 *   Babylon's ashes (The expanse book #6)
