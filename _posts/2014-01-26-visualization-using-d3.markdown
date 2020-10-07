@@ -8,7 +8,7 @@ permalink: /2014/01/26/visualization-using-d3/
 layout: post
 ---
 
-Two visualization I created for [P2PU](https://p2pu.org) from data for [Play with your music](http://www.playwithyourmusic.org). They are used [here](http://info.p2pu.org/2014/01/13/how-we-used-the-echonest-api-for-engagement-learning/).
+Two visualization I created for [P2PU](https://www.p2pu.org) from data for [Play with your music](http://www.playwithyourmusic.org). They are used [here](http://info.p2pu.org/2014/01/13/how-we-used-the-echonest-api-for-engagement-learning/).
 
 A bubble diagram using a force layout:
 

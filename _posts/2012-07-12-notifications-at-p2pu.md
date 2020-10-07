@@ -40,4 +40,4 @@ The notification module then uses the callback URL to let the original module kn
   <a href="http://2.bp.blogspot.com/-t2VOhv6HUpM/T_7JG9NeL0I/AAAAAAAAALI/N0H-IbZq2oc/s1600/notifications.png" imageanchor="1"><img border="0" height="160" src="http://2.bp.blogspot.com/-t2VOhv6HUpM/T_7JG9NeL0I/AAAAAAAAALI/N0H-IbZq2oc/s640/notifications.png" width="640" /></a>
 </div>
 
- [1]: https://p2pu.org/
+ [1]: https://www.p2pu.org/

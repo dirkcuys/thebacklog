@@ -6,7 +6,7 @@ tags: [education]
 categories: [writing]
 ---
 
-I’ve learned many things through the web and alternative sources. Working at [P2PU](http://p2pu.org) for the past 2 years gave me some perspective on how I learned informally.  Here are some thoughts on informal learning:
+I’ve learned many things through the web and alternative sources. Working at [P2PU](https://www.p2pu.org) for the past 2 years gave me some perspective on how I learned informally.  Here are some thoughts on informal learning:
 
 ### if you don’t feel a need to plan, don’t
 

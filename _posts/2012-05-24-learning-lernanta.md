@@ -98,7 +98,7 @@ When a user apply for a badge, [badges.models.Submission][23] is used. When a us
 
 If you would like to get involved with the development of Lernanta, I recommend that you proceed by setting up your development environment by following [this][26] guide.
 
- [1]: https://p2pu.org/
+ [1]: https://www.p2pu.org/
  [2]: https://docs.djangoproject.com/en/dev/topics/auth/
  [3]: https://github.com/p2pu/lernanta/tree/master/lernanta/apps/users
  [4]: https://github.com/p2pu/lernanta/tree/master/lernanta/apps/projects
