@@ -7,10 +7,9 @@ I've had to backup/archive data on an [etherpad](https://etherpad.org/) server m
 
 Requirements:
 
-- the server should still be running
-- a database dump
-- docker installed on your local machine
-- the command line
+- you're running linux and can use the command line
+- docker is installed on your local machine
+- the server is still running and you have ssh access
 
 Get a copy of the database. Eg, run this on your server:
 
@@ -66,3 +65,5 @@ do
     fi
 done
 ```
+
+And now you have the text content of all your etherpads ready to keep or host somewhere for posterity.
