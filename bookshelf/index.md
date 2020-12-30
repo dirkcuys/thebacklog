@@ -4,6 +4,16 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   The Long Earth
+*   Grave Peril
+*   Enders Game
+*   Solaris
+*   Fool Moon
+*   Storm Front
+*   1984
+*   The Stone Sky
+*   The Obelisk Gate
+*   The left hand of darkness
 *   Treasure Island
 *   The Fifth Season
 *   Semiosis
