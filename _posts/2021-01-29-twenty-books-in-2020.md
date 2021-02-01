@@ -2,7 +2,9 @@
 title: Twenty books in 2020
 ---
 
-Prompted by a goodreads book challenge, I decided to read 20 books in 2020. I was planning to still read a bunch of 
+Prompted by a goodreads book challenge, I decided to read 20 books in 2020. Most of the books are sci-fi, some books formed part of a summer school course I did and some books I felt like I should read.
+
+Here is a list of the books I read and a very short summary to remind myself what the book was about.
 
 **WARNING: here be spoilers**
 
