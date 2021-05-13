@@ -17,8 +17,8 @@ let f = 1;
 
 let bodies = [
   {
-    p: [300.0, 400.0],
-    v: [0.0, 220.0],
+    p: [383.0, 100.0],
+    v: [-182.0, -7.0],
     m: 5,
     trail: [],
     projection: [],
@@ -31,7 +31,7 @@ let bodies = [
   {
     p: [400.0, 100.0],
     v: [-180.0, 0.0],
-    m: 1e3,
+    m: 1e7,
     trail: [],
   }
 
@@ -39,6 +39,24 @@ let bodies = [
 
 let ang = 0;
 let engineOn = false;
+
+if (window.location.search){
+  let params = new URLSearchParams(window.location.search);
+  ps = params.getAll('p');
+  vs = params.getAll('v');
+  ms = params.getAll('m');
+  for (i=0; i<3; ++i){
+    if (ps.length > i) {
+      bodies[i].p = ps[i].split(',').map(e => parseFloat(e));
+    }
+    if (vs.length > i) {
+      bodies[i].v = vs[i].split(',').map(e => parseFloat(e));
+    }
+    if (ms.length > i) {
+      bodies[i].m = parseFloat(ms[i]);
+    }
+  }
+}
 
 let zoom = 1;
 
