@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+</head>
+
+<body>
+  <canvas height="900" width="900" ></canvas>
+  <script>
+const dt = 0.005;
+const eps = 1e-9;
+const G = 1e-3;
+
+let trail = [];
+
+let f = 1;
+
+let bodies = [
+  {
+    p: [300.0, 400.0],
+    v: [0.0, 220.0],
+    m: 5,
+    trail: [],
+    projection: [],
+  },
+  {
+    p: [400.0, 400.0],
+    v: [0.0, 0.0],
+    m: 1e10,
+  },
+  {
+    p: [400.0, 100.0],
+    v: [-180.0, 0.0],
+    m: 1e3,
+    trail: [],
+  }
+
+];
+
+let ang = 0;
+let engineOn = false;
+
+let zoom = 1;
+
+function draw() {
+  const canvas = document.querySelector('canvas');
+  const ctx = canvas.getContext('2d');
+  ctx.save()
+  ctx.scale(zoom, zoom);
+
+  function drawBody({p, v}){
+    let [x,y] = p;
+    let [vx, vy] = v;
+    ctx.fillRect(x-5, y-5, 10, 10);
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + vx, y + vy);
+    ctx.stroke();
+  }
+
+  ctx.clearRect(0,0, canvas.width, canvas.height);
+
+  ctx.fillStyle = 'red';
+  drawBody(bodies[0]);
+  for (t of bodies[0].trail){
+    ctx.fillRect(t[0] - 1, t[1] - 1, 2, 2);
+  }
+
+  ctx.fillStyle = 'green';
+  drawBody(bodies[1]);
+
+  ctx.fillStyle = 'blue';
+  drawBody(bodies[2]);
+  for (t of bodies[2].trail){
+    ctx.fillRect(t[0] - 1, t[1] - 1, 2, 2);
+  }
+
+  // engine angle
+  ctx.beginPath();
+  ctx.moveTo(bodies[0].p[0], bodies[0].p[1]);
+  ctx.lineTo(bodies[0].p[0]+20*Math.cos(ang), bodies[0].p[1]+20*Math.sin(ang));
+  ctx.stroke();
+  ctx.restore();
+}
+
+function move(){
+  const t = dt*f;
+
+  function gravity(b1, b2){
+    let r = Math.sqrt( (b1.p[0]-b2.p[0])**2 + (b1.p[1]-b2.p[1])**2 );
+    let a1 = G*b2.m/r**2;
+    let a2 = G*b1.m/r**2;
+ 
+    let rx = b2.p[0]-b1.p[0];
+    let ry = b2.p[1]-b1.p[1];
+ 
+    b1.v[0] += a1*rx/r*dt;
+    b1.v[1] += a1*ry/r*dt;
+ 
+    b2.v[0] += -a2*rx/r*dt;
+    b2.v[1] += -a2*ry/r*dt;
+  }
+
+  gravity(bodies[0], bodies[1]);
+  gravity(bodies[0], bodies[2]);
+  gravity(bodies[1], bodies[2]);
+
+  if (engineOn) {
+    let engineF = 1.6e2;
+    bodies[0].v[0] += engineF/bodies[0].m*dt*Math.cos(ang);
+    bodies[0].v[1] += engineF/bodies[0].m*dt*Math.sin(ang);
+  }
+
+  if (f % 20 == 0){
+    bodies[0].trail = [[...bodies[0].p], ...bodies[0].trail];
+    if (bodies[0].trail.length > 64){
+      bodies[0].trail = bodies[0].trail.slice(0, 64);
+    }
+    bodies[2].trail = [[...bodies[2].p], ...bodies[2].trail];
+    if (bodies[2].trail.length > 64){
+      bodies[2].trail = bodies[2].trail.slice(0, 64);
+    }
+
+  }
+
+  for (body of bodies){
+    body.p[0] += body.v[0]*dt;
+    body.p[1] += body.v[1]*dt;
+  }
+
+}
+
+function loop(){
+  move();
+  if (f%1 == 0) {
+    draw();
+    f += 1;
+    setTimeout(loop, 1);
+  } else {
+    f += 1;
+    loop();
+  }
+}
+
+function _onkeydown(event) {
+   switch (event.keyCode) {
+      case 37:
+        ang -= 5*Math.PI/180.0;
+        break;
+      case 39:
+        ang += 5*Math.PI/180.0;
+        break;
+      case 32:
+        engineOn = true; 
+        break;
+      case 107:
+       zoom += 0.1;
+       break;
+      case 109:
+       zoom -= 0.1;
+       break;
+      case 96:
+       zoom = 1;
+       break;
+
+   }
+  console.log(event.keyCode);
+};
+
+function _onkeyup(e){
+  switch (e.keyCode){
+    case 32:
+      engineOn = false;
+      break;
+  }
+};
+
+document.onkeydown = _onkeydown;
+document.onkeyup = _onkeyup;
+loop();
+
+  </script>
+</body>
+</html>
