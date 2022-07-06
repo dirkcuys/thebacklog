@@ -10,12 +10,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="alternate" type="application/rss+xml" title="The Backlog" href="https://www.thebacklog.net/rss.xml" />
+        <link rel="webmention" href="https://webmention.io/www.thebacklog.net/webmention" />
+        <link rel="pingback" href="https://webmention.io/www.thebacklog.net/xmlrpc" />
+        <link rel="canonical" href="https://www.thebacklog.net{{page.url}}" />
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css" />
-        <link rel="canonical" href="https://www.thebacklog.net{{page.url}}" />
         {% if page.styles %}
           {% include {{page.styles}} %}
         {% endif %}
