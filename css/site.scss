@@ -51,3 +51,51 @@ code {
 .project-tech {
     color: #777;
 }
+
+.swipe-container{
+  position: relative;
+  .swipe-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+}
+
+ul.gallery {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+ul.gallery li {
+  position: relative;
+}
+
+ul.gallery li .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  display: inline;
+  vertical-align: middle;
+  padding-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.402);
+  color: lightgray;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+
+ul.gallery li:hover .overlay{
+  opacity: 1;
+}

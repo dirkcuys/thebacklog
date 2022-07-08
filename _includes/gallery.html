@@ -1,0 +1,8 @@
+<ul class="gallery">
+{% for item in page.gallery %}
+<li>
+<img src="{{item.img}}" loading="lazy"/>
+<div class="overlay"><span>{{item.caption}}</span></div>
+</li>
+{% endfor %}
+</ul>
