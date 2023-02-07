@@ -62,7 +62,7 @@ updateSite(newPageContent)
 ```
 
 Now try it again
-```
+```js
 let newPageContent = `<html>
   <head><title>Page title</title></head>
   <body><h1>Hello world</h1><p>And hello darkness, you're still a friend.</p></body>
@@ -85,7 +85,7 @@ window.location = newLocation
 ```
 
 That didn't quite work. The problem is the first line:
-```
+```js
 let jsContent = `async function updateSite(newPageContent){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/index.html`, {method: 'put', body: newPageContent})
@@ -96,7 +96,7 @@ let jsContent = `async function updateSite(newPageContent){
 
 We could fix this, but there is actually an easier way to get the text body of an function. Let's define the function and then get the body using `.toString`
 
-```
+```js
 async function updateSite(newPageContent){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/index.html`, {method: 'put', body: newPageContent})
@@ -107,13 +107,13 @@ updateSite.toString()
 ```
 
 Okay, we have the content, now lets have a go:
-```
+```js
 updateSite(updateSite.toString())
 ```
 
 Mmm, that wasn't exactly what we wanted. The content was written to the index.html file rather than the lib.js file. Lets update the function to fix that:
 
-```
+```js
 async function updateSite(filename, content){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/${filename}`, {method: 'put', body: content})
@@ -125,7 +125,7 @@ updateSite('lib.js', updateSite.toString())
 
 Okay, now we have the content saved in `lib.js`, but maybe we don't want to navigate to `lib.js` or whatever other file we update each time. Let's update the function again using the [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL/origin):
 
-```
+```js
 async function updateSite(filename, content){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/${filename}`, {method: 'put', body: content})
@@ -136,7 +136,7 @@ updateSite('lib.js', updateSite.toString())
 ```
 
 Oops, that's better - Agregore automatically loads the index.html file, but the content of that file is still the function body we accidentally overwritten it with. Lets fix that:
-```
+```js
 updateSite('index.html', `<html>
   <head><title>Page title</title></head>
   <body><h1>Hello world</h1></body>
@@ -144,7 +144,7 @@ updateSite('index.html', `<html>
 ```
 
 Doh, `updateSite` is defined in `lib.js`, but we're not loading it. Let's try by doing this:
-```
+```js
 let script = document.createElement('script')
 script.src = 'lib.js'
 document.head.appendChild(script)
@@ -152,7 +152,7 @@ updateSite.toString()
 ```
 
 Okay, that's good, we have the function loaded. Let's try updating index.html again, but lets include the script tag so we don't need to inject it into the live page each time:
-```
+```js
 updateSite('index.html', `<html>
   <head><title>Page title</title></head>
   <body>
@@ -163,7 +163,7 @@ updateSite('index.html', `<html>
 ```
 
 Great, we're back to hello world, let's see if `updateSite` is available:
-```
+```js
 updateSite('index.html', `<html>
   <head><title>Page title</title></head>
   <body>
@@ -179,12 +179,12 @@ Awesome, now we have a minimum viable site that we can update!!
 Let's take a moment to recap, if we take out all the indirection and take the direct approach we can get here with:
 
 Start with a blank site:
-```
+```js
 window.location = 'ipfs://bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354'
 ```
 
 Define and save the `updateSite` function:
-```
+```js
 async function updateSite(filename, content){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/${filename}`, {method: 'put', body: content})
@@ -195,7 +195,7 @@ updateSite('lib.js', updateSite.toString())
 ```
 
 Load the script and create `index.html`:
-```
+```js
 let script = document.createElement('script')
 script.src = 'lib.js'
 document.head.appendChild(script)
@@ -216,7 +216,7 @@ To edit content, there are many options! We could load content into a textarea, 
 
 Let's start by arbitrarily adding a list, we'll stay in the console and use javascript, but you can also use the dev tools for the editing part.
 
-```
+```js
 let ul = document.createElement('ul')
 let i1 = document.createElement('li')
 i1.innerHTML='Item 1'
@@ -231,7 +231,7 @@ You should see a list appear with 'Item 1' and then 'Item 2' be added.
 
 Now lets save this updated page:
 
-```
+```js
 updateSite('index.html', document.getElementsByTagName('html')[0].innerHTML)
 ```
 
@@ -239,7 +239,7 @@ This works for the current page, but to edit JavaScript or other files, we're go
 
 Let's start with a textarea:
 
-```
+```js
 let editorDiv = document.createElement('div')
 editorDiv.id = 'editor'
 editorDiv.innerHTML = `<form id="idForm">
@@ -256,7 +256,7 @@ Now we have a text area! And if you click save it disappears. If you've done tha
 
 Now let's add an event listener to make it do something useful:
 
-```
+```js
 const form = document.getElementById('idForm')
 form.onsubmit = e => {
     e.preventDefault()
@@ -272,7 +272,7 @@ So in the 'Filename' field, put 'edit.js'
 
 And in the 'Content' field, the following:
 
-```
+```js
 function edit(){
     let editorDiv = document.createElement('div')
     editorDiv.id = 'editor'
@@ -296,7 +296,7 @@ function edit(){
 
 We should now see the page without the editor. We need to load the `edit.js` script before we can use the edit function:
 
-```
+```js
 let script = document.createElement('script')
 script.src = 'edit.js'
 document.head.appendChild(script)
@@ -305,7 +305,7 @@ edit()
 
 Okay, let's load an existing file into the edit form:
 
-```
+```js
 async function loadFile(filename){
     const resp = await fetch(filename)
     const content = await resp.text()
@@ -316,7 +316,7 @@ async function loadFile(filename){
 
 And now update edit.js by adding the following to the end of the textarea:
 
-```
+```js
 async function loadFile(filename){
     const resp = await fetch(filename)
     const content = await resp.text()
@@ -332,7 +332,7 @@ async function editFile(filename){
 
 Again we'll have to load the script manually, but lets fix that now, load the script:
 
-```
+```js
 let script = document.createElement('script')
 script.src = 'edit.js'
 document.head.appendChild(script)
@@ -340,12 +340,12 @@ document.head.appendChild(script)
 
 We could update 'index.html' to load 'edit.js', but to keep it simple, we'll add the code in 'edit.js' to 'lib.js':
 
-```
+```js
 editFile('lib.js')
 ```
 
 And then in the textarea add the contents of edit.js to the end:
-```
+```js
 function edit(){
     let editorDiv = document.createElement('div')
     editorDiv.id = 'editor'
@@ -384,7 +384,7 @@ Now we have an easy way to update any file in our site, run `editFile('somefile'
 
 There are several improvements to be made. For ex. what happens when the file doesn't exist? Try it. Or what happens if you run `edit('lib.js')` and then decide you actually wanted to edit index.html and then run `edit('index.html')` ...
 
-```
+```js
 async function updateSite(filename, content){
     let cid = window.location.hostname
     const resp = await fetch(`ipfs://${cid}/${filename}`, {method: 'put', body: content})
