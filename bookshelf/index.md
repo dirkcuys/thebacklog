@@ -4,6 +4,13 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Black Fish City
+*   Cloud Atlas
+*   Red Mars
+*   Leviathan Falls
+*   I, Robot
+*   Foundation
+*   Fall or Dodge in Hell
 *   The Long Earth
 *   Grave Peril
 *   Enders Game
