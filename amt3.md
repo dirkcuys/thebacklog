@@ -91,39 +91,39 @@ We want to load this data into a sidebar, so we need to restructure the HTML for
 
 ```js
 editorDiv.innerHTML = `
-        ...
-    `
+    ...
+`
 ```
 
 to the following:
 ```js
-    editorDiv.innerHTML = `<div style="display: flex; flex-grow: 1; padding: 1em">
-        <div id="idSidebar" style="padding-right: 1em;"><h2>Files</h2>
-        </div>
-        <form id="idForm" style="flex-grow: 1; display: flex; flex-direction: column;">
-            <label for="idFilenameInput">Filename</label>
-            <input type="text" name="filename" id="idFilenameInput"></input>
-            <label for="idContentInput">Content</label>
-            <textarea id="idContentInput" style="flex-grow: 1;" rows="20"></textarea>
-            <input type="submit" value="Save"></input>
-        </form>
-    </div>`
+editorDiv.innerHTML = `<div style="display: flex; flex-grow: 1; padding: 1em">
+    <div id="idSidebar" style="padding-right: 1em;"><h2>Files</h2>
+    </div>
+    <form id="idForm" style="flex-grow: 1; display: flex; flex-direction: column;">
+        <label for="idFilenameInput">Filename</label>
+        <input type="text" name="filename" id="idFilenameInput"></input>
+        <label for="idContentInput">Content</label>
+        <textarea id="idContentInput" style="flex-grow: 1;" rows="20"></textarea>
+        <input type="submit" value="Save"></input>
+    </form>
+</div>`
 ```
 
 And at the end of the 'showEditor' function add the logic to create a list with all the files and add it to the sidebar:
 
-```
-    const sidebar = document.getElementById('idSidebar')
-    const files = await listDir(window.origin)
-    const list = document.createElement('ul')
-    list.style =  "list-style: none; padding-inline-start: 0;"
-    files.map( file => {
-        let li = document.createElement('li')
-        li.innerHTML = `<a href="#">${file}</a>`
-        li.querySelector('a').onclick = e => loadFile(file)
-        list.appendChild(li)
-    })
-    sidebar.appendChild(list)
+```js
+const sidebar = document.getElementById('idSidebar')
+const files = await listDir(window.origin)
+const list = document.createElement('ul')
+list.style =  "list-style: none; padding-inline-start: 0;"
+files.map( file => {
+    let li = document.createElement('li')
+    li.innerHTML = `<a href="#">${file}</a>`
+    li.querySelector('a').onclick = e => loadFile(file)
+    list.appendChild(li)
+})
+sidebar.appendChild(list)
 ```
 
 Instead of typing in `editFile('lib.js')` or `editFile('index.html')` we can now simply use `openEditor()` and then select the file we want. This is easier, so it's safe to delete the `editFile()` function now.
