@@ -2,26 +2,6 @@
 layout: page
 ---
 
-# Describe the idea briefly
-
-A simple development environment for p2p web apps in Agregore Browser / Mobile
-
-# Create at least (at most?) one user story
-
-Sammy wants to create a simple website. They wish to share this website with other people and periodically update it.
-
-# Outline your concept. This could be the app ux, architecture, a description, a wireframe or mockups;
-
-- The final product will be a simple landing page and an edit page.
-- The edit page will allow you to select any text file on site and edit it or to create a new text file
-- The logic for the edit page will all be part of the same site and implemented using javascript
-- The site can be published to IPNS for sharing
-- How do I prevent accidentally breaking the site when updating the edit side of things?
-
-# Get feedback from the team
-# If there are any blockers, discuss what you need with the team to move forward.
-# If no blockers remain, make the app!
-
 ## Part 1
 
 Lets start with a clean slate so we can introduce things step for step

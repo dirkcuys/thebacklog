@@ -1,6 +1,8 @@
 ---
 ---
 
+If you haven't already, take a look at [part 1 and 2](part-1/) and [part 3](part-3/).
+
 Let's start again, but this time instead of copy and pasting the code, we'll copy some files from the web to our own site. Go to [the empty IPFS folder](ipfs://bafyaabakaieac/) using agregore web and open your dev console.
 
 First we'll create a function that takes an array of File objects and adds it to our IPFS site. To add multiple files at once, we need to use a PUT request with a Formdata instance as the body. The FormData object will contain all the files we're adding. You can read the [docs](https://github.com/RangerMauve/js-ipfs-fetch#await-fetchipfsbafyaabakaieac-method-put-body-new-formdata) for more info.
