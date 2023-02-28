@@ -39,13 +39,15 @@ To do that, we can publish our site using a key and obtain an IPNS address that 
 
 
 Lets create the key:
-```
+
+```js
 let resp = await fetch('ipns://localhost/?key=mysite', {method: 'POST'})
 const key = resp.headers.get('location')
 ```
 
 Now, lets post our site to the key
-```
+
+```js
 resp = await fetch(key, {method: 'POST', body: window.origin})
 ```
 
@@ -179,4 +181,3 @@ async function showEditor(){
     }
 }
 ```
-
