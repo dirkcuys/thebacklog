@@ -405,3 +405,4 @@ async function editFile(filename){
 }
 ```
 
+Follow along with [part 3]({{site.baseurl}}/projects/agregore-web-apps/part-3/)
