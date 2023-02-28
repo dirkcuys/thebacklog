@@ -1,7 +1,7 @@
 ---
 ---
 
-If you haven't already, take a look at [part 1 and 2](part-1/) and [part 3](part-3/).
+If you haven't already, take a look at [part 1 and 2]({{site.baseurl}}/projects/agregore-web-apps/part-1/) and [part 3]({{site.baseurl}}/projects/agregore-web-apps/part-3/).
 
 Let's start again, but this time instead of copy and pasting the code, we'll copy some files from the web to our own site. Go to [the empty IPFS folder](ipfs://bafyaabakaieac/) using agregore web and open your dev console.
 

@@ -4,7 +4,7 @@ layout: page
 ---
 # Part III
 
-So, let's assume we've lots the code from part [1 & 2]({{site.baseurl}}/projects/agregore-web-apps/part-1), lets quickly bootstrap. Open ipfs://bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354 and enter the following in the development console:
+So, let's assume we've lots the code from part [1 & 2]({{site.baseurl}}/projects/agregore-web-apps/part-1/), lets quickly bootstrap. Open ipfs://bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354 and enter the following in the development console:
 
 ```js
 async function updateSite(filename, content){
