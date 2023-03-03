@@ -4,15 +4,21 @@ layout: page
 
 ## Part 1
 
-Lets start with a clean slate so we can introduce things step for step
+Before we get started, you need to download the Agregore Browser. You can download the latest release from [GitHub](https://github.com/AgregoreWeb/agregore-browser/). Follow the link under releases to find the latest version and the appropriate binary for your system. [Here](https://github.com/AgregoreWeb/agregore-browser/releases/tag/v1.10.1) is a link to the latest version at the time of writing.
 
-(TODO: download & run agregore web)
+Once you've downloaded Agregore Browser, open the Browser to get started.
 
-Go to ipfs://bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354 (empty IPFS dir)
+We're starting with a clean slate so we can introduce things step for step. In the address bar, enter the following address: [ipfs://bafyaabakaieac/](ipfs://bafyaabakaieac/). This is the IPFS address of an empty directory. You should see a page showing the following:
 
-(TODO: open dev tools)
+> Index of /
+> - ../
+> - /undefined
 
-Lets create a basic HTML file - Hello World:
+Now open the developer tools. To do so you can use the application top menu, it's File -> Open Dev Tools, or you can use Ctrl+Shift+I (press and hold the Ctrl, Shift and I key). You should see a sidebar open up. Then go to the 'Console' by clicking on the 'Console' tab. Here you will be able to enter and run JavaScript commands. This is what you should see at this point:
+
+![Image of Agregore Browser with devtools open](./agregore-browser-devtools.png)
+
+Lets create a basic HTML file - Hello World. In the console, enter the following text:
 
 ```javascript
 let newPageContent = `<html>
@@ -25,7 +31,11 @@ const newLocation = resp.headers.get('location')
 window.location = newLocation
 ```
 
-Okay, now we have our very first website! We can easily update the content of the site by doing the same. Let's turn that into a function that we can reuse!
+Okay, now we have our very first website saved to IPFS! We achieved this my using the `fetch` function to do a PUT request to the current IPFS content ID (CID for short) as the base URL and the filename we wanted to create/update. Fetch returned the CID for the updated content in the location header.
+
+This is possible because the Agregore Browser runs it's own IPFS node and implements the `fetch` function for IPFS protocols like `ipfs://` and `ipns://`. You can read more about this on the [Agregore website](https://agregore.mauve.moe/).
+
+We can update the content of the site by doing the same. Let's turn that into a function that we can reuse!
 
 ```js
 async function updateSite(newPageContent){
@@ -74,7 +84,7 @@ let jsContent = `async function updateSite(newPageContent){
 }`
 ```
 
-We could fix this, but there is actually an easier way to get the text body of an function. Let's define the function and then get the body using `.toString`
+We could fix this, but there is an easier way to get the text body of an function. Let's define the function and then get the body using `.toString`
 
 ```js
 async function updateSite(newPageContent){
@@ -190,11 +200,12 @@ setTimeout( () => updateSite('index.html', `<html>
 
 So we've used only the dev tools in Agregore to create a basic web page. We've started making it a little easier to build on this, but it's still tedious to update content. But we can improve this using the tools we have!
 
+
 ## Part II
 
-To edit content, there are many options! We could load content into a textarea, use content-editable, or directly manipulate the page content using either javascript or dev tools. We could also use another editor and upload the content if we wanted to, but lets focus on options that doesn't require any other tools.
+To edit content, there are many options! We could load content into a `textarea`, use `content-editable`, or directly manipulate the page content using javascript or the dev tools. We could also use another editor and upload the content if we wanted to, but lets focus on options that doesn't require any other tools.
 
-Let's start by arbitrarily adding a list, we'll stay in the console and use javascript, but you can also use the dev tools for the editing part.
+Let's start by arbitrarily adding a list, we'll stay in the console and use JavaScript, but you can also use the dev tools for the editing part.
 
 ```js
 let ul = document.createElement('ul')
@@ -248,9 +259,7 @@ form.onsubmit = e => {
 
 We're going to use this editor to save the logic for a text area to a JavaScript function stored in a file called `edit.js`.
 
-So in the 'Filename' field, put 'edit.js'
-
-And in the 'Content' field, the following:
+So in the 'Filename' field, put 'edit.js', and in the 'Content' field, the following:
 
 ```js
 function edit(){
@@ -362,7 +371,9 @@ async function editFile(filename){
 
 Now we have an easy way to update any file in our site, run `editFile('somefile')` in the console and edit it. 
 
-There are several improvements to be made. For ex. what happens when the file doesn't exist? Try it. Or what happens if you run `edit('lib.js')` and then decide you actually wanted to edit index.html and then run `edit('index.html')` ...
+There are several improvements to be made. Like what happens when the file doesn't exist? Try it. Or what happens if you run `edit('lib.js')` and then decide you actually wanted to edit index.html and then run `edit('index.html')`
+
+Here is the final code for lib.js:
 
 ```js
 async function updateSite(filename, content){
@@ -405,4 +416,4 @@ async function editFile(filename){
 }
 ```
 
-Follow along with [part 3]({{site.baseurl}}/projects/agregore-web-apps/part-3/)
+Follow along with [part 3]({{site.baseurl}}/projects/agregore-web-apps/part-3/).
