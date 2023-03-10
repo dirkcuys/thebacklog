@@ -10,8 +10,8 @@ The first application + tutorial I've build is a basic development environment. 
 
 There are 4 parts to the tutorial:
 
-- [Part 1 & 2](../part-1/)
-- [Part 3](../part-3/)
-- [Part 4](../part-4/)
+- [Part 1 & 2](./part-1/)
+- [Part 3](./part-3/)
+- [Part 4](./part-4/)
 
 If this is something that interests you, be sure to join [Agregore on Matrix](https://matrix.to/#/#agregore:mauve.moe).
