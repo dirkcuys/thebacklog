@@ -3,9 +3,9 @@
 
 If you haven't already, take a look at [part 1 and 2]({{site.baseurl}}/projects/agregore-web-apps/part-1/) and [part 3]({{site.baseurl}}/projects/agregore-web-apps/part-3/).
 
-Let's start again, but this time instead of copy and pasting the code, we'll copy some files from the web to our own site. Go to [the empty IPFS folder](ipfs://bafyaabakaieac/) using agregore web and open your dev console.
+Let's start again, but this time instead of copy and pasting the code, we'll copy some files from the web to our own site. Go to [the empty IPFS folder](ipfs://bafyaabakaieac/) using Agregore Browser, open your dev tools (`Ctrl+Shift+I`) and go to the console.
 
-First we'll create a function that takes an array of File objects and adds it to our IPFS site. To add multiple files at once, we need to use a PUT request with a Formdata instance as the body. The FormData object will contain all the files we're adding. You can read the [docs](https://github.com/RangerMauve/js-ipfs-fetch#await-fetchipfsbafyaabakaieac-method-put-body-new-formdata) for more info.
+First we'll create a function that takes an array of File objects and adds it to our site. To add multiple files at once, we need to use a PUT request with a `FormData` instance as the body. The `FormData` object will contain a list of the files we're adding. You can read the more about this on the [documentation site](https://github.com/RangerMauve/js-ipfs-fetch#await-fetchipfsbafyaabakaieac-method-put-body-new-formdata).
 
 ```js
 async function addFiles(files){
@@ -19,7 +19,7 @@ async function addFiles(files){
 }
 ```
 
-And now let's get the files from the web and add them using the function we just defined.
+And now let's get the `index.html` and `lib.js` from the web and add them to our site using the function we just defined.
 
 ```js
 let resp = await fetch('https://www.thebacklog.net/projects/agregore-web-apps/amt3.js')
@@ -33,10 +33,9 @@ addFiles([
 ])
 ```
 
-The biggest piece that we are still missing about creating a website is giving it an address. You've probably noticed that each time we've made a change to our site, the address changed to a new address in the format `ipfs://blahblahtoolongandunreadabletoreallypayattentionlinknoteveninthebio`. If we want to share our site with other people, we need an unchanging URL to share with other people.
+The last piece that we are still missing to have a usable website is giving it an address. You've probably noticed that each time we've made a change to our site, the address changed to a new address in the format `ipfs://blahblahtoolongandunreadabletoreallypayattentionlinknoteveninthebio`. If we want to share our site with other people, we need an unchanging URL to share with other people.
 
 To do that, we can publish our site using a key and obtain an IPNS address that stays the same!!
-
 
 Lets create the key:
 
@@ -45,22 +44,19 @@ let resp = await fetch('ipns://localhost/?key=mysite', {method: 'POST'})
 const key = resp.headers.get('location')
 ```
 
-Now, lets post our site to the key
+The value of key is the IPNS address that we can share with other people. It will start with the protocol part of the URL `ipns://` followed by alpha numeric characters.
+
+We've created the key, but it doesn't yet point at anything. Let's point it at the `ipfs://` address of our site. This can take a while (~30s) so be patient.
 
 ```js
 resp = await fetch(key, {method: 'POST', body: window.origin})
 ```
 
-This can take a while (~30s) so be patient.
-
-Once that is done, visit your published site by going to the ipns://... URL or by running `window.location = key` in your development console.
-
-You can also use an IPFS capable browser on a different device to view the site.
+Once the request succeeds, you can visit your published site by going to the `ipns://...` URL or by running `window.location = key` in the console. You can also use an IPFS capable browser on a different device to view the site.
 
 Lets see if we can update the site from the IPNS URL. Run `showEditor()` in the console, make an edit to index.html and see what happens.
 
-That took a while and didn't succeed. The error is on line 3 of the updateSite function, we hardcoded the protocol part of the URL we're using in fetch. 
-Lets fix that now. Since we can't save, we need to go back to the last version with an `ipfs://...` URL. Then change the updateSite function as follows:
+That took a while and didn't succeed. Looking at the error message in the console, it seems the error is on line 3 of the `updateSite` function, we hard coded the protocol part of the URL we're using in fetch. Lets fix that now. Since we can't save, we need to go back to the last version with an `ipfs://...` URL. Then change the `updateSite` function as follows:
 
 ```js
 async function updateSite(filename, content){
@@ -69,7 +65,7 @@ async function updateSite(filename, content){
     window.location = new URL(newLocation).origin
 ```
 
-Before we publish the site again, lets add that functionality to 'lib.js'. Add the following function:
+Before we publish the site again, let's add that functionality to 'lib.js'. Add the following function:
 
 ```js
 async function publishSite(){
@@ -80,9 +76,9 @@ async function publishSite(){
 }
 ```
 
-Now run `publishSite()` in your devtools console, again it will take some time to work. But now once you're redirected to your site you should be able to update the ipns site!
+Now run `publishSite()` in the console, again it will take some time to work. But now once you're redirected to your site you should be able to update the ipns site!
 
-And lastly, lets add a button to publish our site. Add the following code to the showEditor function:
+And lastly, lets add a button to publish our site. Add the following code to the `showEditor` function:
 
 ```js
 if (window.origin.startsWith('ipfs://')){

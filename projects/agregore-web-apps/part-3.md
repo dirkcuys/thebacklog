@@ -4,7 +4,7 @@ layout: page
 ---
 # Part III
 
-So, let's assume we've lots the code from part [1 & 2]({{site.baseurl}}/projects/agregore-web-apps/part-1/), lets quickly bootstrap. Open ipfs://bafybeiczsscdsbs7ffqz55asqdf3smv6klcw3gofszvwlyarci47bgf354 and enter the following in the development console:
+Starting out, we'll assume we lost the code from part [1 & 2]({{site.baseurl}}/projects/agregore-web-apps/part-1/), let's quickly bootstrap. Open an [empty IPFS folder](ipfs://bafyaabakaieac/) in Agregore Browser and open the dev tools (Ctrl+Shift+I) and go to the console tab. Enter the following:
 
 ```js
 async function updateSite(filename, content){
@@ -14,7 +14,7 @@ async function updateSite(filename, content){
     window.location = new URL(newLocation).origin
 }
 
-function edit(){
+async function openEditor(){
     let editorDiv = document.getElementById("editor")
     if (!editorDiv){
         editorDiv = document.createElement('div')
@@ -45,7 +45,7 @@ async function loadFile(filename){
 }
 
 async function editFile(filename){
-    edit()
+    openEditor()
     loadFile(filename)
 }
 ```
@@ -61,7 +61,7 @@ document.head.appendChild(script)
 setTimeout( () => editFile('index.html'), 1000)
 ```
 
-Copy the code below in the editor and hit save.
+Again you will see some error text in the text area. Replace that with the code below and save again.
 
 ```html
 <html>
@@ -77,17 +77,25 @@ We're back at the end of part II!
 
 A typical website consist of more than one file, in our example we have 'index.html' and 'lib.js'. Lets add a sidebar that lists all the files on our site. We can get a list of list of all the files in a directory in IPFS by adding '?noResolve' to the path. Try it by adding '?noResolve' to the current ipfs URL in the address bar, you should see a list that includes '../', './index.html' and './lib.js'. These are all the files for our site!
 
-So lets update './lib.js' to get this info for us. Open lib.js using `editFile('lib.js')` in the dev console and add the following function:
+Let's create a function to fetch the contents of a directory. Normally when we fetch an IPFS directory in the Agregore Browser, it checks to see if there is an index file present and if so, it returns that file. To disable that, we add the querystring `?noResolve` to the end of the directory URL
 
 ```js
 async function listDir(path){
-    const resp = await fetch(window.origin + '?noResolve')
+    const resp = await fetch(path + '?noResolve')
     const files = await resp.json()
     return files
 }
 ```
 
-We want to load this data into a sidebar, so we need to restructure the HTML for the editor a bit. Change the line
+We can test this function in the console by running, it should return the array `["index.html", "lib.js"]`.
+
+```
+await listDir(window.origin)
+```
+
+Now add the function './lib.js' using `editFile('lib.js')` in the dev console and adding the function body to the file.
+
+We want to load this data into a sidebar, so we need to restructure the HTML for the editor a bit. We'll have to update the HTML we've assigned to the editor. Change the part
 
 ```js
 editorDiv.innerHTML = `
@@ -96,6 +104,7 @@ editorDiv.innerHTML = `
 ```
 
 to the following:
+
 ```js
 editorDiv.innerHTML = `<div style="display: flex; flex-grow: 1; padding: 1em">
     <div id="idSidebar" style="padding-right: 1em;"><h2>Files</h2>
@@ -110,7 +119,7 @@ editorDiv.innerHTML = `<div style="display: flex; flex-grow: 1; padding: 1em">
 </div>`
 ```
 
-And at the end of the 'showEditor' function add the logic to create a list with all the files and add it to the sidebar:
+And add the logic to create a list with all the files and add it to the sidebar at the end of the 'showEditor' function:
 
 ```js
 const sidebar = document.getElementById('idSidebar')
@@ -128,9 +137,7 @@ sidebar.appendChild(list)
 
 Instead of typing in `editFile('lib.js')` or `editFile('index.html')` we can now simply use `openEditor()` and then select the file we want. This is easier, so it's safe to delete the `editFile()` function now. You can always use `loadFile()` to load a file once the editor is already open.
 
-Take this opportunity to play around a little, maybe update the site HTML a bit, add more HTML pages, add another JavaScript file for the site specifically, create a stylesheet, etc.
-
-To add a new file, you can open the editor, write a new filename and it should be created when you save.
+To add a new file, you can open the editor, write a new filename and it should be created when you save. You can play around a little, maybe update the HTML, add more pages, add another JavaScript file, create a stylesheet, etc. 
 
 I've added a file called 'site.js' that opens the editor once the document is loaded.
 
@@ -146,9 +153,9 @@ And then I added the script to 'index.html'
 <script src="site.js"></script>
 ```
 
-You might be asking what happens if we have nested directories, the short answer is that things will probably not work as expected. The current site doesn't have any directories, but lets create one by opening 'lib.js' and changing the filename to 'dir/lib.js' before saving. Now you should see 'dir/' listed in the sidebar.
+You might be asking what happens if we have nested directories, the short answer is that things will probably not work as expected. The current site doesn't have any directories, we can create one by opening 'lib.js' and changing the filename to 'dir/lib.js' before saving. Now you should see 'dir/' listed in the sidebar. If you open it, you'll see the array of files in `dir` rather than the files themselves.
 
-To load directories, we need to update the part that loads the sidebar. For a start, let's move that code into a separate function:
+To load directories, we need to update the part that loads the sidebar. Before we do that, let's move that code into a separate function:
 
 ```js
 async function loadSidebar(){
@@ -167,19 +174,18 @@ async function loadSidebar(){
 ```
 
 And replace the code you added to the `showEditor()` function with a call to `loadSidebar()` like this
+
 ```js
 await loadSidebar()
 ```
 
-We want to check if a file is a directory, and if it is a directory, create an element for each file or repeat the process for any directories it contains. For now the plan is to simply create a single flat list that will look something like this:
+To make the sidebar work, we should check if a file is a directory and if it is, create an element for each file or repeat the process for any directories it contains. For now we will create a list that will look something like this:
 
 > index.html
 > dir/lib.js
 > lib.js
 
-So let's update the element creation logic in `loadSidebar()`:
-
-**TODO** break down the steps here - there is a lot going on!
+So let's update the element creation logic in `loadSidebar()`. We'll extract the logic for creating an HTML element for each entry in a directory into a separate function. This function will return a list with a single element (a link that will open the file) if the directory entry is a file. If it is a directory, it will read the files in that directory call itself on each of those files/directories.
 
 ```js
 async function loadSidebar(){
@@ -215,7 +221,7 @@ async function loadSidebar(){
 }
 ```
 
-Here is the final 'lib.js' file:
+Here is what the final 'lib.js' looks like:
 
 ```js
 async function updateSite(filename, content){
