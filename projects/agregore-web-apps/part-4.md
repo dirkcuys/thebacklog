@@ -11,7 +11,7 @@ First we'll create a function that takes an array of File objects and adds it to
 async function addFiles(files){
     const formData = new FormData()
     files.forEach( (file, index) => {
-       formData.append(`file-${index}`, file) 
+       formData.append('file', file) 
     })
     const resp = await fetch(window.origin, {method: 'put', body: formData})
     const newLocation = resp.headers.get('location')
