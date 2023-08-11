@@ -6,7 +6,7 @@ This is part of a larger project with [Agregore Web](https://agregore.mauve.moe/
 
 In this project specifically, we're building a few small distributed web applications that runs in the [Agregore Browser](https://github.com/AgregoreWeb/agregore-browser) using [IPFS](https://ipfs.tech/) as the protocol for the distributed part. Each application we build is accompanied with a tutorial to help introduce the idea of the distributed web. You can read more about the process [here](https://agregore.mauve.moe/docs/tutorials/process).
 
-The first application + tutorial I've build is a basic development environment. The tutorial walks you through bootstrapping the environment from the dev tools in the Agregore Browser. At the end you'll have an environment that you can further refine or use to create a site / content that you can share with other people.
+The first application + tutorial I've built is a basic development environment. The tutorial walks you through bootstrapping the environment from the dev tools in the Agregore Browser. At the end you'll have an environment that you can further refine or use to create a site / content that you can share with other people.
 
 There are 4 parts to the tutorial:
 
