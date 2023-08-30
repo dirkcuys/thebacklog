@@ -4,6 +4,12 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Perhaps the stars (currently reading)
+*   The Will to Battle
+*   Seven surrenders
+*   Too like the lightening
+*   Consider Plebas
+*   The long way to a small angry planet
 *   Black Fish City
 *   Cloud Atlas
 *   Red Mars
