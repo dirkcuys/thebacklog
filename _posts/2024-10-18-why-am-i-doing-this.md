@@ -1,7 +1,7 @@
 ---
 title: Why am I doing this?
 ---
-It is Friday, 14h37. I just submitted an app for Apple to review. I worked past 2am last night to get things done. Things were not done then and they are not done now. But done enough. I am very tired. I still need to bake a cake with my daughter for her birthday party tomorrow. Why am I doing this?
+It is Friday, 14h37. I just submitted an app for Apple to review. I worked past 2am last night to get things done. Things were not done then and they are not done now. But done enough. I am very tired. My neck hurts. I still need to bake a cake with my daughter for her birthday party tomorrow. Why am I doing this?
 
 I have a list that is embarrassingly long. A list of projects. Projects that never saw the light of day. Some projects are excusable, they were tools that helped other things, or they were hands-on learning experiments, or they were merely quick flights of fantasy, or they lead to a dead-end. A folder with > 100 started projects, boxes with half built electronics projects, a finished floor without a skirting, wood and cork for a pin-up board, diagrams stuck to the wall for making a stackable planter system out of cast concrete a fish tank that probably cycled a month ago. The list goes on. I do not care to take account of half-written posts.
 
