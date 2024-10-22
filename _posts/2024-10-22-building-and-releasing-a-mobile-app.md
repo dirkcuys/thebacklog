@@ -56,4 +56,6 @@ The whole Apple part of the process was like pulling teeth. I struggled creating
 
 So, I achieved what I initially set out to do - release an app on the Google Play Store and the Apple App Store. Next stop is profit, right?
 
-You can find the app online at [dingdongdoorbell.com](https://dingdongdoorbell.com) - it creates QR code you can use as a doorbell.
+You can find the app online at [dingdongdoorbell.com](https://dingdongdoorbell.com) - it creates a QR code you can use as a doorbell.
+
+<div style="display:flex;"><img src="/img/2024/10/dingdong-icon.png" style="margin: auto; height: 10vh; width: auto;"/></div>
