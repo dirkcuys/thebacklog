@@ -33,7 +33,7 @@ The third application was a continuation of the development environment mentione
 The fourth application took advantage of what was built before to add code highlighting to the editor using ACE editor.
 
 - [app](https://agregore.mauve.moe/docs/examples/browser-devenv-v3/)
-- [tutorial](https://agregore.mauve.moe/docs/tutorials/ipfs-3rd-party-dep/)
+- [tutorial](https://agregore.mauve.moe/docs/tutorials/ipfs-3rdparty-dep/)
 
 
 The fifth and last application for this project was an image gallery.
