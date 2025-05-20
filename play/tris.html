@@ -1,0 +1,103 @@
+<html>
+<head>
+  <style>
+    html, body { margin: 0; padding: 0; }
+  </style>
+</head>
+<body>
+  <canvas id="canvas" width="100%" height="100%"></canvas>
+  <script>
+
+
+window.addEventListener('load', e => {
+  const canvas = document.getElementById("canvas")
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const mid = [Math.random()*canvas.width, Math.random()*canvas.height];
+  const ctx = canvas.getContext("2d");
+
+  function drawTri(tl, tr, bm){
+    let tmid = [bm[0], tl[1]/2+bm[1]/2];
+    let d = Math.sqrt(Math.pow(tmid[0]-mid[0], 2) + Math.pow(tmid[1]-mid[1], 2));
+    console.log(d);
+    ctx.lineWidth = 4*(2/(1+Math.exp(-d/4000)) -1);
+    ctx.beginPath();
+    ctx.moveTo(...tl);
+    ctx.lineTo(...tr);
+    ctx.lineTo(...bm);
+    ctx.lineTo(...tl);
+    ctx.stroke();
+  }
+
+  //ctx.fillStyle = "green";
+  //ctx.fillRect(10, 10, 150, 100);
+  function triDivide(p1, p2, p3){
+
+    let t1p1 = [p1[0], p1[1]];
+    let t1p2 = [p1[0]/2 + p2[0]/2, p1[1]/2 + p2[1]/2];
+    let t1p3 = [p1[0]/2 + p3[0]/2, p1[1]/2 + p3[1]/2];
+
+    let tooSmall = ( Math.sqrt( Math.pow(t1p1[0] - t1p2[0], 2) + Math.pow(t1p1[1] - t1p2[1], 2) ) < 8 );
+
+    drawTri(t1p1, t1p2, t1p3);
+    if (tooSmall) ctx.fill();
+
+    let t2p1 = t1p2;
+    let t2p2 = p2;
+    let t2p3 = [p2[0]/2 + p3[0]/2, p2[1]/2 + p3[1]/2];
+    drawTri(t2p1, t2p2, t2p3);
+    if (tooSmall) ctx.fill();
+
+    let t3p1 = t1p3;
+    let t3p2 = t2p3;
+    let t3p3 = p3;
+    drawTri(t3p1, t3p2, t3p3);
+    if (tooSmall) ctx.fill();
+
+    drawTri(t1p3, t2p3, t1p2);
+    if (tooSmall) ctx.fill();
+
+    if (tooSmall)
+      return [];
+
+    return [
+      [t1p1, t1p2, t1p3],
+      [t2p1, t2p2, t2p3],
+      [t3p1, t3p2, t3p3],
+      [t1p3, t2p3, t1p2],
+    ];
+
+  }
+
+  ctx.lineWidth = 3;
+  let rows = Math.ceil(window.innerHeight/(Math.sqrt(3/4)*window.innerWidth));
+  console.log(`We need ${rows+1} row(s)`);
+
+  let tris = [];
+  let rowHeight = Math.sqrt(3/4)*window.innerWidth;
+  for (let row = 0; row<rows; ++row) {
+    tris = [
+      ...tris,
+      [ [0, row*rowHeight], [window.innerWidth, row*rowHeight], [window.innerWidth/2, (1+row)*rowHeight] ],
+      [ [0, row*rowHeight], [window.innerWidth/2, (1+row)*rowHeight], [-window.innerWidth/2, (1+row)*rowHeight],],
+      [ [window.innerWidth, row*rowHeight], [3*window.innerWidth/2, (1+row)*rowHeight], [window.innerWidth/2, (1+row)*rowHeight] ],
+    ];
+  }
+
+  drawTri(...tris[0]);
+  for (let count=0; count < 2000; count++){
+    // pick a random triangle from the stack and subdivide it
+    let index = Math.floor(Math.random()*tris.length);
+    //console.log('Subdividing triangle at index', index);
+    const tri = tris[index];
+    tris[index] = tris[tris.length-1];
+    tris.pop()
+    tris = [ ...triDivide(...tri), ...tris ];
+    //console.log('Tris', tris);
+  }
+
+})
+  </script>
+</body>
+</html>
