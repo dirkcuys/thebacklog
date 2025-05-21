@@ -1,0 +1,47 @@
+<html>
+  <head></head>
+  <style>
+   html, body { padding: 0; margin: 0; }
+  </style>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+    </svg>
+    <script>
+
+// lifted from https://stackoverflow.com/a/37411738
+function createNode(n, v) {
+  let n_ = document.createElementNS("http://www.w3.org/2000/svg", n);
+  for (var p in v)
+    n_.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
+  return n_;
+}
+
+window.addEventListener('load',e => {
+  console.log('boo');
+  let svg = document.querySelector('svg');
+  svg.viewBox.baseVal.width = window.innerWidth;
+  svg.viewBox.baseVal.height = window.innerHeight;
+  let rh = 25;
+  let cw = 25;
+  for (let row=-1; row < Math.ceil(window.innerHeight/rh)+1; row++){
+    for (let col=-1; col < Math.ceil(window.innerWidth/cw)+1; col++){
+      svg.appendChild(
+        createNode('circle', {cx: col*cw, cy: row*rh, r: 40, stroke: "#EAEAEA", strokeWidth:"1", fill:"none"})
+      );
+    }
+  }
+
+  for (let row=-1; row < Math.ceil(window.innerHeight/rh)+1; row++){
+    for (let col=-1; col < Math.ceil(window.innerWidth/cw)+1; col++){
+      if ((row + col) % 2 == 0){
+        svg.appendChild(
+          createNode('circle', {cx: col*cw, cy: row*rh, r: 40, stroke: "#AAA", strokeWidth:"1", fill:"none"})
+        );
+      }
+    }
+  }
+
+})
+    </script>
+  </body>
+</html>
