@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     html, body { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+    </svg>
+    <script>
+
+// lifted from https://stackoverflow.com/a/37411738
+function createNode(n, v) {
+  let n_ = document.createElementNS("http://www.w3.org/2000/svg", n);
+  for (var p in v)
+    n_.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
+  return n_;
+}
+
+window.addEventListener('load',e => {
+  let svg = document.querySelector('svg');
+  svg.viewBox.baseVal.width = window.innerWidth;
+  svg.viewBox.baseVal.height = window.innerHeight;
+  let rh = 50;
+  let cw = 50;
+  let gonS = 25;
+  let md = [Math.random()*window.innerWidth, Math.random()*window.innerHeight];
+  points = [];
+  const sides = 5; // sides
+  let deltaAngle = 2*Math.PI/sides;
+  for (let angle = deltaAngle/2; angle<2*Math.PI; angle += deltaAngle){
+    console.log('angle', angle);
+    let progression = 
+    points.push([Math.cos(Math.PI/2+angle), Math.sin(Math.PI/2+angle)]);
+  }
+  console.log(points);
+  
+  for (let row=-1; row < Math.ceil(window.innerHeight/rh)+2; row++){
+    for (let col=-1; col < Math.ceil(window.innerWidth/cw)+2; col++){
+      svg.appendChild(
+        createNode('polygon', {
+          transform:`
+            translate(${col*cw} ${row*rh})
+            rotate(${row+2*col} 0 0)
+            scale(${gonS} ${gonS})
+          `,
+          points: points.join(' '), 
+          stroke: 'rgba(0,0,0,1)',
+          strokeWidth: "0.05",
+          fill: 'none',
+        })
+      );
+      /*
+      svg.appendChild(
+        createNode('circle', {cx: col*cw, cy: row*rh, r: 2, fill:"rgba(0,0,0,0.1)"})
+      );
+      */
+
+    }
+  }
+
+})
+    </script>
+  </body>
+</html>
