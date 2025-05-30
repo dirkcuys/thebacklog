@@ -1,0 +1,30 @@
+---
+layout: page
+iframes: 
+- /play/planets
+- /play/pattern
+- /play/tris
+- /play/circ
+- /play/grid
+- /play/opti
+- /play/colr
+- /play/prime
+---
+<style>
+.playblock {
+  position: relative;
+}
+.playblock a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+{% for iframe in page.iframes %}
+<div class="playblock">
+  <iframe width="100%" height="100%" src="{{iframe}}"></iframe>
+  <a href="{{iframe}}"></a>
+</div>
+{% endfor %}
