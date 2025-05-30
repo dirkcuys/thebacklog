@@ -4,12 +4,17 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   Fritz Deelman en die Groen Dood - Leon Rousseau
+*   [Hoe ek dit onthou - Francois van Coke, Annie Klopper](https://www.nb.co.za/en/view-book?id=9780795710537)
+*   Fritz Deelman en die Skepe van Mars - Leon Rousseau
+*   The Growing Pains of Adrian Mole
+*   The Gods Themselves - Isaac Asimov
 *   Nation - Terry Pratchett
 *   Perhaps the stars
 *   The Will to Battle
 *   Seven surrenders
 *   Too like the lightening
-*   Consider Plebas
+*   [Consider Phlebas - Iain Banks](https://en.wikipedia.org/wiki/Consider_Phlebas)
 *   The long way to a small angry planet
 *   Black Fish City
 *   Cloud Atlas
@@ -86,8 +91,8 @@ These are some of the books currently on my bookshelf:
 *   [20000 leagues under the sea][4] &#8211; Jules Verne
 *   [Around the world in 80 days][5] &#8211; Jules Verne
 *   [Maisie Dobbs][6]
-*   [Acid Alex][7]
-*   [Around Africa on my Bicycle][8]
+*   Acid Alex
+*   Around Africa on my Bicycle
 *   [The Book Thief][9]
 *   [Zoo City][10]
 *   Harry Potter and the Sorcerer's Stone
@@ -102,17 +107,16 @@ These are some of the books currently on my bookshelf:
 *   Dirk Gently&#8217;s Holistic Detective Agency
 *   The Motorcycle Diaries
 *   Everything is Illuminated
-*   To the Point: The no holds barred autobiography
+*   To the Point: The no holds barred autobiography - Herschelle Gibbs
 *   Travels in the land of Kubilai Khan
 *   Great Expectations
 *   Valverde's Gold
 
- [1]: http://musicophilia.com/
  [2]: http://en.wikipedia.org/wiki/Long_Walk_to_Freedom
  [3]: http://en.wikipedia.org/wiki/Immortality_%28novel%29
  [4]: http://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Sea
  [5]: http://en.wikipedia.org/wiki/Around_the_World_in_Eighty_Days
- [6]: http://www.jacquelinewinspear.com/maisie-dobbs.php
+ [6]: https://jacquelinewinspear.com/books/maisie-dobbs/
  [7]: http://www.kalahari.com/books/Acid-Alex/632/28193092.aspx
  [8]: http://www.kalahari.com/books/Around-Africa-on-My-Bicycle----------------------/632/34099125.aspx
  [9]: http://en.wikipedia.org/wiki/The_Book_Thief
