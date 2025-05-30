@@ -1,0 +1,109 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     html, body { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+    </svg>
+    <script>
+
+// lifted from https://stackoverflow.com/a/37411738
+function createNode(n, v) {
+  let n_ = document.createElementNS("http://www.w3.org/2000/svg", n);
+  for (var p in v)
+    n_.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
+  return n_;
+}
+
+window.addEventListener('load',e => {
+  let svg = document.querySelector('svg');
+  svg.viewBox.baseVal.width = window.innerWidth;
+  svg.viewBox.baseVal.height = window.innerHeight;
+  let rh = 23;
+  let cw = 19;
+  let gonS = 37;
+  let md = [Math.random()*window.innerWidth, Math.random()*window.innerHeight];
+  points = [];
+  const sides = 5; // sides
+  let deltaAngle = 2*Math.PI/sides;
+  for (let angle = deltaAngle/2; angle<2*Math.PI; angle += deltaAngle){
+    //console.log('angle', angle);
+    points.push([Math.cos(Math.PI/2+angle), Math.sin(Math.PI/2+angle)]);
+  }
+  //console.log(points);
+
+  let color1 = {r: 179*Math.random(), g: 181*Math.random(), b: 191*Math.random()};
+  let color1p = {x: Math.random()*window.innerWidth, y: Math.random()*window.innerHeight};
+  let color2 = {r: 193*Math.random(), g: 197*Math.random(), b: 199*Math.random()};
+  let color2p = {x: Math.random()*window.innerWidth, y: Math.random()*window.innerHeight};
+  let color3 = {r: 211*Math.random(), g: 223*Math.random(), b: 227*Math.random()};
+  let color3p = {x: Math.random()*window.innerWidth, y: Math.random()*window.innerHeight};
+  /*color1p[0] = 0;
+  color2p[0] = window.innerWidth;
+  color3p[1] = window.innerHeight;*/
+
+  /*console.log(color1, color1p);
+  console.log(color2, color2p);
+  console.log(color3, color3p);*/
+  
+  for (let row=-1; row < Math.ceil(window.innerHeight/rh)+2; row++){
+    for (let col=-1; col < Math.ceil(window.innerWidth/cw)+2; col++){
+      let x = col*cw;
+      let y = row*rh;
+      
+      // interpolate between colorp1 and colorp2 and calculate a new point p12
+      // should probably project the point, but just interpolating it for now
+      let d1 = Math.sqrt(Math.pow(x-color1p.x, 2) + Math.pow(y-color1p.y, 2));
+      let d2 = Math.sqrt(Math.pow(x-color2p.x, 2) + Math.pow(y-color2p.y, 2));
+      let d12 = d1+d2;
+      let c12 = {
+        r: d2/d12*color1.r + d1/d12*color2.r,
+        g: d2/d12*color1.g + d1/d12*color2.g,
+        b: d2/d12*color1.b + d1/d12*color2.b,
+      };
+      let p12 = {
+        x: d2/d12*color1p.x + d1/d12*color2p.x,
+        y: d2/d12*color1p.y + d1/d12*color2p.y,
+      }
+
+      // now interpolate between the point p12 with color c12 and point color3p with color color3
+      let d3 = Math.sqrt(Math.pow(x-color3p.x, 2) + Math.pow(y-color3p.y, 2));
+      let dp12 = Math.sqrt(Math.pow(x-p12.x, 2) + Math.pow(y-p12.y, 2));
+      let d3p12 = d3 + dp12;
+
+      let color = {
+        r: d3/d3p12*c12.r + dp12/d3p12*color3.r,
+        g: d3/d3p12*c12.g + dp12/d3p12*color3.g,
+        b: d3/d3p12*c12.b + dp12/d3p12*color3.b,
+      };
+      /*
+      console.log(row, col, d1, d2, d3)
+      console.log(...c12)
+      console.log(...p12)
+      console.log(...color);
+      //*/
+
+      svg.appendChild(
+        createNode('polygon', {
+          transform:`
+            translate(${col*cw} ${row*rh})
+            rotate(${43+31*Math.random()} 0 0)
+            scale(${gonS*(59/67+229/233*Math.random())} ${gonS})
+          `,
+          points: points.join(' '), 
+          //stroke: 'rgba(0,0,0,1)',
+          stroke: 'none',
+          //strokeWidth: "0.05",
+          fill: `rgba(${color.r}, ${color.g}, ${color.b}, ${3/127+17/199*Math.random()})`,
+        })
+      );
+    }
+  }
+
+})
+    </script>
+  </body>
+</html>
