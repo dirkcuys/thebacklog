@@ -1,0 +1,158 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     html, body { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="100%" height="100%"></canvas>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+  attribute vec2 aVertexPosition;
+  uniform vec2 uScalingFactor;
+
+  varying lowp vec4 vColor;
+
+  void main() {
+    gl_Position = vec4(aVertexPosition * uScalingFactor, 0.0, 1.0);
+    vColor = vec4(gl_Position.x, gl_Position.y, 1.0, 1.0);
+  }
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+  #ifdef GL_ES
+    precision highp float;
+  #endif
+
+  uniform vec4 uGlobalColor;
+  varying lowp vec4 vColor;
+
+  void main() {
+    gl_FragColor = vColor;
+  }
+</script>
+
+
+<script>
+
+let gl = null;
+
+function buildShaderProgram(shaderInfo) {
+  const program = gl.createProgram();
+
+  shaderInfo.forEach(({id, type}) => {
+    let shader = gl.createShader(type);
+    let code = document.getElementById(id).firstChild.nodeValue;
+
+    gl.shaderSource(shader, code);
+    gl.compileShader(shader);
+    if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+      console.log(`Error compiling ${type === gl.VERTEX_SHADER ? "vertex" : "fragment"} shader:`,);
+      console.log(gl.getShaderInfoLog(shader));
+    }
+
+    if (shader) {
+      gl.attachShader(program, shader);
+    }
+  });
+
+  gl.linkProgram(program);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    console.log("Error linking shader program:");
+    console.log(gl.getProgramInfoLog(program));
+  }
+
+  return program;
+}
+
+
+window.addEventListener('load',e => {
+
+  const canvas = document.getElementById("canvas")
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  gl = canvas.getContext("webgl");
+
+  const shaderSet = [
+    { id: "vertex-shader", type: gl.VERTEX_SHADER },
+    { id: "fragment-shader", type: gl.FRAGMENT_SHADER },
+  ];
+
+  let shaderProgram = buildShaderProgram(shaderSet);
+
+  let aspectRatio = canvas.width / canvas.height;
+  let currentScale = [1.0, aspectRatio];
+
+  const rows = 10/aspectRatio;
+  const cols = 10;
+  const rowh = 0.1;
+  const colw = 0.1;
+
+  let vertices = [
+  //  -0.2, 0.2, 0.2, 0.2, 0.2, -0.2,
+  //  -0.5, 0.5, 0.5, -0.5, -0.5, -0.5,
+  ];
+
+  for (let row=-rows; row < rows; row++){
+    for (let col=-cols; col < cols; col++){
+      let p1 = [col*colw, row*rowh];
+      let p2 = [p1[0]+colw, p1[1]];
+      let p3 = [p2[0], p1[1]+rowh];
+      vertices.push(...p1, ...p2, ...p3);
+    }
+  }
+  console.log(vertices);
+  window.vertices = vertices;
+
+  let vertexArray = new Float32Array(vertices);
+  let vertexBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+  gl.bufferData(gl.ARRAY_BUFFER, vertexArray, gl.STATIC_DRAW);
+
+  let vertexNumComponents = 2;
+  let vertexCount = vertexArray.length / vertexNumComponents;
+
+  // Draw scene
+  gl.viewport(0, 0, canvas.width, canvas.height);
+  gl.clearColor(0.8, 0.9, 1.0, 1.0);
+  gl.clear(gl.COLOR_BUFFER_BIT);
+
+  gl.useProgram(shaderProgram);
+
+  let uScalingFactor = gl.getUniformLocation(shaderProgram, "uScalingFactor");
+  let uGlobalColor = gl.getUniformLocation(shaderProgram, "uGlobalColor");
+
+  gl.uniform2fv(uScalingFactor, currentScale);
+  gl.uniform4fv(uGlobalColor, [0.1, 0.7, 0.2, 1.0]);
+
+  gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+
+  let aVertexPosition = gl.getAttribLocation(shaderProgram, "aVertexPosition");
+
+  gl.enableVertexAttribArray(aVertexPosition);
+  gl.vertexAttribPointer(
+    aVertexPosition,
+    vertexNumComponents,
+    gl.FLOAT,
+    false,
+    0,
+    0,
+  );
+
+  gl.drawArrays(gl.TRIANGLES, 0, vertexCount);
+  // end Draw scene
+
+});
+
+
+
+
+</script>
+  {% include google_analytics.html %}
+  </body>
+</html>
