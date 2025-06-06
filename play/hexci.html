@@ -1,0 +1,118 @@
+---
+---
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     html, body { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000">
+    </svg>
+    <script>
+
+// lifted from https://stackoverflow.com/a/37411738
+function createNode(n, v) {
+  let n_ = document.createElementNS("http://www.w3.org/2000/svg", n);
+  for (var p in v)
+    n_.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
+  return n_;
+}
+
+function nGon(n) {
+  let points = [];
+  const sides = n;
+  let deltaAngle = 2*Math.PI/sides;
+  for (let angle = deltaAngle/2; angle<2*Math.PI; angle += deltaAngle){
+    //console.log('angle', angle);
+    points.push([Math.cos(Math.PI/2+angle), Math.sin(Math.PI/2+angle)]);
+  }
+  return points;
+}
+
+window.addEventListener('load',e => {
+  let svg = document.querySelector('svg');
+  svg.viewBox.baseVal.width = window.innerWidth;
+  svg.viewBox.baseVal.height = window.innerHeight;
+  let rh = 30;
+  let cw = 2*Math.sqrt(3)*rh;
+  let points = nGon(5);
+
+  svg.appendChild(
+    createNode('rect', {
+      width: window.innerWidth, 
+      height: window.innerHeight,
+      stroke: 'none',
+      //strokeWidth: "0.05",
+      fill: `black`,
+      //fill: none,
+    })
+  );
+
+  let bigR = rh;
+  let smallR = bigR*0.5;
+
+  
+  for (let row=-1; row < Math.ceil(window.innerHeight/rh)+2; row++){
+    for (let col=-1; col < Math.ceil(window.innerWidth/cw)+2; col++){
+      let x = col*cw + 0.5*cw*(row%2);
+      let y = row*rh
+
+      let rotation = 360*(row+col)/Math.min(Math.ceil(window.innerHeight/rh),Math.ceil(window.innerWidth/cw));
+      rotation = 360*(col)/(window.innerWidth/cw) + 360*row/(window.innerHeight/rh);
+      rotation = Math.floor(4*Math.random())*60;
+      //rotation = Math.random()*360;
+      //rotation = col%4*90 + (row)%4*30;
+
+      svg.appendChild(
+        createNode('circle', {
+          cx: x, 
+          cy: y,
+          r: bigR-1,
+          stroke: 'none',
+          fill: `rgba(255, 255, 255, 1)`,
+        })
+      );
+
+      let clipPath = createNode('clipPath', {id: `maskr${row}c${col}`});
+      clipPath.appendChild(
+        createNode('circle', {cx: x, cy: y, r: bigR})
+      );
+      svg.appendChild(clipPath);
+
+      let g = svg.appendChild(
+        createNode('g', {
+          clipPath: `url(#maskr${row}c${col})`,
+        })
+      );
+      g.appendChild(
+        createNode('circle', {
+          transform:`
+            translate(${x} ${y})
+            rotate(${rotation})
+            translate(${bigR-smallR+2} 0)
+          `,
+          cx: 0, 
+          cy: 0,
+          r: smallR,
+          //stroke: 'rgba(0,0,0,1)',
+          stroke: 'none',
+          fill: `rgba(0, 0, 0, 1)`,
+        })
+      );
+
+      /*
+      svg.appendChild( 
+        createNode('circle', { cx: x, cy: y, r: 1, fill: `red`})
+      );
+      //*/
+
+    }
+  }
+
+})
+    </script>
+  {% include google_analytics.html %}
+  </body>
+</html>
