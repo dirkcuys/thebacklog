@@ -8,9 +8,9 @@ I recently published an app I wrote. Why did I do this? I’ve been developing f
 
 This has been a recurring thought, but recently I developed a need for something that could benefit from being an app. I could probably have done it as a PWAs, but this seemed like a good excuse to target the app stores and see what goes into publishing an app there.
 
-Previously I’ve worked with react native, but in true developer spirit I figured doing only one thing at a time would be a missed opportunity, so I opted to try flutter for this project.
+Previously I’ve worked with react native, but in true developer spirit I figured doing only one new thing at a time would be a missed opportunity, so I opted to try flutter for this project.
 
-I intentionally decided to not start with market research. Too often have I had ideas that never realized since almost everything has been done and once I look around it I lose motivation to get started. This was more of a screw it, let's do it type of thing.
+I intentionally decided to not start with market research. Too often have I had ideas that never realized - I would start by looking around, find something very close to what I want to build and lose motivation to get started. This was more of a screw it, let's do it type of thing.
 
 Getting the basic code up and running was pretty straight forward. Flutter has sufficient documentation to help you and plenty of 3rd party packages that would make most web developers dealing with npm feel right at home.
 
