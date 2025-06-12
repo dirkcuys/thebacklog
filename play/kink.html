@@ -1,0 +1,86 @@
+---
+---
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     html, body { padding: 0; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 1000"></svg>
+    <script>
+
+// lifted from https://stackoverflow.com/a/37411738
+function createNode(n, v) {
+  let n_ = document.createElementNS("http://www.w3.org/2000/svg", n);
+  for (var p in v)
+    n_.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
+  return n_;
+}
+
+function kinkLine(p1, p2){
+  let l = Math.sqrt( (p1[0]-p2[0])**2 + (p1[1]-p2[1])**2)
+
+  let p3 = [ p1[0]/2+p2[0]/2, p1[1]/2+p2[1]/2];
+  let s = Math.sqrt(1/4)*l*0.9;
+  let n = [-(p1[1]-p2[1]), +(p1[0]-p2[0])];
+  nl = Math.sqrt(n[0]**2+n[1]**2);
+  let p4 = [ p3[0]+s*n[0]/nl, p3[1]+s*n[1]/nl ];
+  return [
+    [p2, p4],
+    [p4, p1],
+  ];
+}
+
+
+window.addEventListener('load',e => {
+  let svg = document.querySelector('svg');
+  svg.viewBox.baseVal.width = window.innerWidth;
+  svg.viewBox.baseVal.height = window.innerHeight;
+
+  let g = createNode('g', {
+    transform: window.innerWidth<window.innerHeight?`translate(${-(window.innerHeight-window.innerWidth)/2}, 0)`:`translate(0, ${(window.innerHeight-window.innerWidth)/2})`
+  });
+  svg.appendChild(g);
+
+  function drawLine(p1, p2){
+    g.appendChild(createNode('line', {
+      x1: p1[0], y1: p1[1],
+      x2: p2[0], y2: p2[1],
+      stroke: 'black'
+    }));
+  }
+
+  function recurLine(p1, p2){
+    let [x1, y1] = p1;
+    let [x2, y2] = p2;
+    drawLine(p1, p2);
+ 
+    let [l1, l2] = kinkLine(p1, p2);
+
+    let d = Math.sqrt((l1[0][0] - l1[1][0])**2+(l1[0][1]-l1[1][1])**2);
+    if (d > 15){
+      recurLine(...l1);
+      recurLine(...l2);
+    } else {
+      drawLine(...l1);
+      drawLine(...l2);
+    }
+  }
+
+  let dim = Math.max(window.innerWidth, window.innerHeight);
+  let p1 = [dim, 0];
+  let p2 = [0, 0];
+  let p3 = [0, dim];
+  let p4 = [dim, dim];
+
+  recurLine(p1, p2);
+  recurLine(p2, p3);
+  recurLine(p3, p4);
+  recurLine(p4, p1);
+})
+    </script>
+    {% include google_analytics.html %}
+  </body>
+</html>
