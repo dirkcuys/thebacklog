@@ -4,19 +4,20 @@ layout: page
 ---
 These are some of the books currently on my bookshelf:
 
+*   The City We Became - N. K. Jemisin
 *   Fritz Deelman en die Groen Dood - Leon Rousseau
 *   [Hoe ek dit onthou - Francois van Coke, Annie Klopper](https://www.nb.co.za/en/view-book?id=9780795710537)
 *   Fritz Deelman en die Skepe van Mars - Leon Rousseau
 *   The Growing Pains of Adrian Mole
 *   The Gods Themselves - Isaac Asimov
 *   Nation - Terry Pratchett
-*   Perhaps the stars
-*   The Will to Battle
-*   Seven surrenders
-*   Too like the lightening
+*   Perhaps the stars - Ada Palmer
+*   The Will to Battle - Ada Palmer
+*   Seven surrenders - Ada Palmer
+*   Too like the lightening - Ada Palmer
 *   [Consider Phlebas - Iain Banks](https://en.wikipedia.org/wiki/Consider_Phlebas)
-*   The long way to a small angry planet
-*   Black Fish City
+*   The long way to a small angry planet - Becky Chambers
+*   Black Fish City - Sam J. Miller
 *   Cloud Atlas
 *   Red Mars
 *   Leviathan Falls
@@ -30,11 +31,11 @@ These are some of the books currently on my bookshelf:
 *   Fool Moon
 *   Storm Front
 *   1984
-*   The Stone Sky
-*   The Obelisk Gate
+*   The Stone Sky - N. K. Jemisin
+*   The Obelisk Gate - N. K. Jemisin
 *   The left hand of darkness
 *   Treasure Island
-*   The Fifth Season
+*   The Fifth Season - N. K. Jemisin
 *   Semiosis
 *   Ready Player One
 *   Juliet, Naked 
