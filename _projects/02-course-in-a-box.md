@@ -1,6 +1,8 @@
 ---
 title: Course in a Box
 tech: "GitHub pages, Jekyll, social engineering :)"
+image: /img/projects/course-in-a-box.png
+image_alt: Picture of Course in A Box website showing an example course with modules and sub-modules
 importance: 2
 ---
 

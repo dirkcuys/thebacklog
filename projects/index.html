@@ -7,11 +7,36 @@ layout: page
 <p>These are some things I've worked on - some for fun, some for profit and some for both!</p>
 
 {% for project in site.projects|dictsort:'importance' %}
-<h2>{{ project.title }}</h2>
-<p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
-
-{{ project.output }}
-
+  {% if project.image %}
+    <div class="row project">
+      {% capture image_align %}{% cycle 'right', 'left' %}{% endcapture %}
+      {% if image_align == 'left' %}
+      <div class="columns medium-4">
+        <img src="{{site.baseurl}}{{project.image}}" alt="{{project.image_alt}}" />
+      </div>
+      {% endif %}
+      <div class="columns medium-8">
+        <h2>{{ project.title }}</h2>
+        <p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
+     
+        {{ project.output }}
+      </div>
+      {% if image_align == 'right' %}
+      <div class="columns medium-4">
+        <img src="{{site.baseurl}}{{project.image}}" alt="{{project.image_alt}}" />
+      </div>
+      {% endif %}
+ 
+    </div>
+  {% else %}
+    <div class="row project">
+      <div class="column">
+        <h2>{{ project.title }}</h2>
+        <p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
+        {{ project.output }}
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}
 
 

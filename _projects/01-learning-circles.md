@@ -1,5 +1,7 @@
 ---
 title: Learning Circles
+image: /img/projects/learning-circles.png
+image_alt: Screenshot of learning circles website showing tiles with details about learning circles.
 tech: Django, HTML5, integration with Twilio.
 ---
 
