@@ -101,6 +101,34 @@ ul.gallery li:hover .overlay{
   opacity: 1;
 }
 
-.row.project {
+/* Grid layout for projects */
+.project {
   margin-top: 2em;
+  display: grid;
+  gap: 1em;
 }
+
+@media only screen and (min-width: 32em) {
+  .project {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 1fr;
+  }
+
+  .project .title, .project .description {
+    grid-column: span 8;
+  }
+
+  .project .image{
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  .project .image.left {
+    grid-column: 1/5;
+    grid-row: 1/3;
+  }
+}
+
+

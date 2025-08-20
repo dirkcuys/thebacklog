@@ -7,36 +7,21 @@ layout: page
 <p>These are some things I've worked on - some for fun, some for profit and some for both!</p>
 
 {% for project in site.projects|dictsort:'importance' %}
-  {% if project.image %}
-    <div class="row project">
+  <div class="project">
+    <div class="title">
+      <h2>{{ project.title }}</h2>
+      <span class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</span>
+    </div>
+    {% if project.image %}
       {% capture image_align %}{% cycle 'right', 'left' %}{% endcapture %}
-      {% if image_align == 'left' %}
-      <div class="columns medium-4">
+      <div class="image {{image_align}}">
         <img src="{{site.baseurl}}{{project.image}}" alt="{{project.image_alt}}" />
       </div>
-      {% endif %}
-      <div class="columns medium-8">
-        <h2>{{ project.title }}</h2>
-        <p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
-     
-        {{ project.output }}
-      </div>
-      {% if image_align == 'right' %}
-      <div class="columns medium-4">
-        <img src="{{site.baseurl}}{{project.image}}" alt="{{project.image_alt}}" />
-      </div>
-      {% endif %}
- 
+    {% endif %}
+    <div class="description">
+      {{ project.output }}
     </div>
-  {% else %}
-    <div class="row project">
-      <div class="column">
-        <h2>{{ project.title }}</h2>
-        <p class="project-tech"><i class="fa fa-wrench"></i> {{project.tech}}</p>
-        {{ project.output }}
-      </div>
-    </div>
-  {% endif %}
+  </div>
 {% endfor %}
 
 
