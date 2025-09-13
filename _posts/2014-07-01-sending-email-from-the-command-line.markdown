@@ -17,4 +17,4 @@ server.quit()
 
 Copy and paste this into a file and run it using python: `python test_smtp.py`.
 
-I had to test SMTP credentials without installing a mail client (or [something](http://sendmail.org) [worse](http://postfix.org)...), so the script is pretty basic.
+I had to test SMTP credentials without installing a mail client (or [something](https://en.wikipedia.org/wiki/Sendmail) [worse](https://www.postfix.org/)...), so the script is pretty basic.
