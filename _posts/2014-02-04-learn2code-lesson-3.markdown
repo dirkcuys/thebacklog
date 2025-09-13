@@ -64,7 +64,7 @@ Tweak and enjoy your infinite number of unique cities! The skyline at the top of
 
 Until next time!!
 
-<script src="https://rawgithub.com/wout/svg.js/master/dist/svg.min.js"></script>
+<script src="/js/vendor/svg.min.js"></script>
 <script type="text/javascript">
 function rect(x, y, width, height){
         var draw = SVG('canvas').size(1000, 200);
