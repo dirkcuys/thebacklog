@@ -18,22 +18,13 @@ I recently took a dive into the source code of a project called <a href="https:/
 While trying to figure out how the code base comes together to form the final web application, I was presented with many challenges. One of those challenges was that I didn&#8217;t know about everything that Lernanta does. Another challenge was (and still is) that terminology used in the source code differs from the terminology used on p2pu.org.
 
 In this post I intend to outline the relevant top level entities of Lernanta. I will also try to explain how these entities corresponds to the source code.  
-### 
-
-### 
-
-###  
 
 ### Users
 
 Users are probably the most important entity on P2PU. Without users no peer learning will be possible and everyone working on P2PU will probably get very lonely and depressed.
 
 Lernanta uses [django.contrib.auth][2] for authentication and profiles are managed by the [users app][3].  
-### 
 
-### 
-
-###  
 
 ### Courses
 
@@ -52,7 +43,6 @@ On the software side of things participation is indicated by a [Participation][6
 Users following courses are indicated using a [Relationship][7] entity. A relationship entity is automatically create for an participant, thus a participant is also a follower.
 
 Course content is created by adding tasks to a course. In the source code tasks are represented by [Pages][8] that are part of the [content][9] application in Lernanta. Pages are versioned to preserve their history.  
-### 
 
 ### Schools
 
@@ -61,7 +51,6 @@ Schools are used to group together courses that are about a similar topic. Curre
 Schools each have a dedicated page with more information about the school and sets of courses associated with the school. Schools can also have specific sets of courses that they want to be displayed on their landing page.
 
 In Lernanta, schools are implemented using the [schools app][15]. Courses can be associated with a school using the [school][16] property. Sets of courses are managed by [schools.models.ProjectSet][17]. Users doesn&#8217;t need to belong to a school in order to participate in a course offered by a school.  
-### 
 
 ### Badges
 
@@ -78,7 +67,7 @@ In Lernanta, the [badges][19] application is used to implement the above mention
 <table align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td>
-      <a href="http://4.bp.blogspot.com/-Pk3K24v8b_E/T79ZUFwDUDI/AAAAAAAAAJI/fx8KYWDlacc/s1600/badges_diagram.jpg" imageanchor="1"><img border="0" height="293" src="http://4.bp.blogspot.com/-Pk3K24v8b_E/T79ZUFwDUDI/AAAAAAAAAJI/fx8KYWDlacc/s320/badges_diagram.jpg" width="320" /></a>
+      <a href="/img/2012/badges_diagram.jpg" imageanchor="1"><img border="0" height="293" src="/img/2012/badges_diagram.jpg" width="320" /></a>
     </td>
   </tr>
   
