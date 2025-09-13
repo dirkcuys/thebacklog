@@ -31,5 +31,5 @@ You can safe the page your browser displays when you enter the URL, or you can u
 
 The data is now in your hands and it&#8217;s up to you to keep it safe.
 
- [1]: http://www.delicious.com/
- [2]: http://www.avos.com/
+ [1]: https://web.archive.org/web/20110427025816/http://www.delicious.com/
+ [2]: https://web.archive.org/web/20110505021239/http://www.avos.com/
