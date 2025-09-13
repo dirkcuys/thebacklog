@@ -8,7 +8,7 @@ layout: page
 
 Waking up in the dark is no fun, so the obvious solution is to learn how to use a laser cutter. No, seriously. I didn't want to buy an expensive smart light like the Philips hue, so I decided to build my own.
 
-I settled on a doughnut-shaped design with an LED strip on the inside and outside. For the 'smart' part of the light, I used a Raspberry Pi Zero Wireless. After drawing the design in Inkscape, I headed to [Maker station](http://makerstation.co.za/), a local maker space I recently joined, and did the laser cutting.
+I settled on a doughnut-shaped design with an LED strip on the inside and outside. For the 'smart' part of the light, I used a Raspberry Pi Zero Wireless. After drawing the design in Inkscape, I headed to [Maker station](https://web.archive.org/web/20170622153622/makerstation.co.za/), a local maker space I recently joined, and did the laser cutting.
 
 ![picture of laser cut parts]({{site.baseurl}}/img/projects/smart-light/1-parts.jpg)
 
