@@ -4,7 +4,7 @@ layout: page
 
 Hi, I'm Dirk. This is my website.
 
-I strongly believe that technology should empower people and create a healthy society that we all want to be a part off. This requires deliberate effort and attention to achieve and maintain.
+I believe that technology should empower people and create a healthy society that we all want to be a part off. This requires deliberate effort and attention to achieve and maintain.
 
 Over the last decade and a bit I've been working on a variety of open source [projects]({{site.baseurl}}/projects/) that I believe contributes to that goal.
 
