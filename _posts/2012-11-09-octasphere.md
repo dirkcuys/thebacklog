@@ -16,7 +16,7 @@ categories:
 ---
 A while back I played a bit with webgl and decided that I want to draw a sphere.UV spheres have their problems, so I considered doing a icosphere. But to draw an icosphere you have to start with and icosahedron and then subdivide. Generating the initial coordinates for the icosahedron felt like too much work for the lazy me.
 
-Instead I opted to start with an octahedron and subdivide from there. An octahedron has a modest 6 coordinates that you need to start with and they happen to lie on the primary axis!
+Instead I opted to start with an [octahedron](https://en.wikipedia.org/wiki/Octahedron) and subdivide from there. An octahedron has a modest 6 coordinates that you need to start with and they happen to lie on the primary axis!
 
 <canvas id="canvas" width="500" height="500"></canvas>
 
@@ -48,13 +48,12 @@ Instead I opted to start with an octahedron and subdivide from there. An octahed
     }
 </script>
 
-<script src="//rawgithub.com/dirkcuys/b2d/master/js/jquery-1.7.1.min.js"></script>
-<script src="//rawgithub.com/dirkcuys/octasphere/master/js/gl-matrix.js"></script>
-<script src="//rawgithub.com/dirkcuys/octasphere/master/js/draw.js"></script>
+<script src="/js/gl-matrix.js"></script>
+<script src="/js/octasphere.js"></script>
 <script type="text/javascript">
-  $(document).ready(function(){
-    startWebGl();
-  });
+    window.addEventListener('load', e => {
+      startWebGl();
+    });
 </script>
 
 I have no idea why octospheres aren&#8217;t more popular? Until my experiment, I&#8217;ve never knowingly encountered one?
