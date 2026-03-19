@@ -1,5 +1,5 @@
 ---
-title: Why am I doing this?
+title: Sometimes I wonder why I do this?
 ---
 It is Friday, 14h37. I just submitted an app for Apple to review. I worked past 2am last night to get things done. Things were not done then and they are not done now. But done enough. I am very tired. My neck hurts. I still need to bake a cake with my daughter for her birthday party tomorrow. Why am I doing this?
 

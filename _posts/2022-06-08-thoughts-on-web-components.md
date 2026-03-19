@@ -1,12 +1,12 @@
 ---
-title: Thoughts on web components
+title: Modern web applications without a build system
 ---
 
 I recently built [this app](https://github.com/dirkcuys/ipmb). In short, it is a markdown blog that writes data to a local IPFS node when using [this browser](https://github.com/AgregoreWeb/agregore-browser).
 
-Additionally we (it was developed as part of [this project](https://github.com/ipfs/devgrants/blob/ef3ac96d6aab4d498b2ecd4cd9f7d99fb29ba2a1/open-grants/open-proposal-agregore-mobile.md#milestone-4-example-app-showcasing-sharing-data)) wanted to make the app as simple as possible, so simple that you could possibly just edit the code in said browser and write the results back to IPFS.
+We (it was developed as part of [this project](https://github.com/ipfs/devgrants/blob/ef3ac96d6aab4d498b2ecd4cd9f7d99fb29ba2a1/open-grants/open-proposal-agregore-mobile.md#milestone-4-example-app-showcasing-sharing-data)) wanted to make the app as simple as possible, so simple that you could possibly just edit the code in said browser and write the results back to IPFS.
 
-This is very doable using web components and JavaScript!
+This is very doable using Web Components and JavaScript!
 
 What are web components? Two things really, the ability to create custom tags like `<this-is-my-tag>` implemented by extending `HTMLElement` and the shadow DOM. Since my attention suffers some deficit, I jumped into code before/while reading all the docs and learned some things.
 
