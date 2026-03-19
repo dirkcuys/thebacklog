@@ -1,5 +1,5 @@
 ---
-title: Releasing on iOS and Android
+title: Releasing on the iOS and Android stores
 header_image: /img/2024/10/doors.png
 ---
 ![](/img/2024/10/doors.png)
